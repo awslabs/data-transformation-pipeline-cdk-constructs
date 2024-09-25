@@ -60,7 +60,7 @@ const defaultProps: Partial<VpcBatchFargateConstructProps> = {
  * This construct creates a VPC with a private subnet and a security group.
  */
 export class VpcBatchFargateConstruct extends Construct {
-  /** 
+  /**
    * The VPC
    */
   readonly vpc: ec2.Vpc;
@@ -70,7 +70,7 @@ export class VpcBatchFargateConstruct extends Construct {
    */
   readonly subnets:ec2.ISubnet[];
 
-  /** 
+  /**
    * The VPC security groups
    */
   readonly securityGroups: ec2.SecurityGroup[];
@@ -117,8 +117,8 @@ export class VpcBatchFargateConstruct extends Construct {
     });
 
     this.subnets = this.vpc.selectSubnets({
-        subnetGroupName: pipelineSubnetConfig.name,
-      }).subnets
+      subnetGroupName: pipelineSubnetConfig.name,
+    }).subnets;
 
     /**
          * Security Groups
@@ -152,7 +152,7 @@ export class VpcBatchFargateConstruct extends Construct {
     this.securityGroups = [pipelineSecurityGroup];
 
     // Create VPC Gateway endpoints
-    if(props.gatewayVpcEndpointServices != undefined) {
+    if (props.gatewayVpcEndpointServices != undefined) {
       for (let service of props.gatewayVpcEndpointServices) {
         this.vpc.addGatewayEndpoint('S3Endpoint', {
           service: service,

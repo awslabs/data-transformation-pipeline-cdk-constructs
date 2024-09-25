@@ -32,13 +32,15 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'website/.docusaurus',
   ],
   deps: [
+    'cdk-nag',
+  ],
+  peerDeps: [
+    `@aws-cdk/aws-lambda-python-alpha@${CDK_VERSION}-alpha.0`,
   ],
   devDeps: [
-    '@aws-cdk/aws-lambda-python-alpha',
-    'cdk-nag',
     'aws-cdk-lib',
     'constructs',
-    'jest'
+    'jest',
   ],
 });
 

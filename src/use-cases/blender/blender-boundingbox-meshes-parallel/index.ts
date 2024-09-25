@@ -14,19 +14,19 @@
 import * as path from 'path';
 import * as cdk from 'aws-cdk-lib';
 import { Duration, Size } from 'aws-cdk-lib';
-import * as iam from 'aws-cdk-lib/aws-iam';
 import * as batch from 'aws-cdk-lib/aws-batch';
-import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
+import * as ecs from 'aws-cdk-lib/aws-ecs';
+import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as s3 from 'aws-cdk-lib/aws-s3';
+import { NagSuppressions } from 'cdk-nag';
 import { Construct } from 'constructs';
-import { VpcBatchFargateConstruct } from '../../../constructs/aws-vpc-batch-fargate';
 import { BatchFargateConstruct } from '../../../constructs/aws-batch-fargate';
-import { BatchFargateParallelPipelineConstruct } from '../../../patterns/aws-batch-fargate-parallel-pipeline';
+import { VpcBatchFargateConstruct } from '../../../constructs/aws-vpc-batch-fargate';
 import { JobSchemasLambdaLayersConstruct, JobSchema } from '../../../constructs/core/job-schemas-lambda-layers';
 import { StepConfig, StepType } from '../../../constructs/core/job-utils';
-import { NagSuppressions } from 'cdk-nag';
+import { BatchFargateParallelPipelineConstruct } from '../../../patterns/aws-batch-fargate-parallel-pipeline';
 
 export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -64,11 +64,11 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
         ec2.InterfaceVpcEndpointAwsService.ECR_DOCKER,
         ec2.InterfaceVpcEndpointAwsService.BATCH,
         ec2.InterfaceVpcEndpointAwsService.CLOUDWATCH_LOGS,
-        ec2.InterfaceVpcEndpointAwsService.STEP_FUNCTIONS
-      ]
+        ec2.InterfaceVpcEndpointAwsService.STEP_FUNCTIONS,
+      ],
     });
 
-    const jobSchemaLambdaLayers = new JobSchemasLambdaLayersConstruct(this, 'JobSchemaLambdaLayers')
+    const jobSchemaLambdaLayers = new JobSchemasLambdaLayersConstruct(this, 'JobSchemaLambdaLayers');
 
     /**
      * Batch Resources
@@ -105,7 +105,7 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
         assumedBy: new iam.ServicePrincipal('ecs-tasks.amazonaws.com'),
         managedPolicies: [
           iam.ManagedPolicy.fromAwsManagedPolicyName(
-            'service-role/AmazonECSTaskExecutionRolePolicy'
+            'service-role/AmazonECSTaskExecutionRolePolicy',
           ),
         ],
       },
@@ -120,8 +120,8 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
           InputBucketPolicy: bucketPolicy,
           OutputBucketPolicy: bucketPolicy,
           StateTaskPolicy: stateTaskPolicy,
-        }
-      }
+        },
+      },
     );
 
     NagSuppressions.addResourceSuppressions(
@@ -158,7 +158,7 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
       this,
       'BatchJobDefinition',
       {
-        jobDefinitionName: "BlenderParallelJobDefinition",
+        jobDefinitionName: 'BlenderParallelJobDefinition',
         retryAttempts: 1,
         container: new batch.EcsFargateContainerDefinition(this, 'BatchJobDefinitionContainer', {
           cpu: 2,
@@ -194,7 +194,7 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
         code: lambda.Code.fromAsset(path.join(__dirname, '../../../constructs/core/lambda/constructJobDefinition')),
         handler: 'index.lambda_handler',
         timeout: Duration.seconds(60),
-        layers: [jobSchemaLambdaLayers.InputSingleFileOutputPrefix]
+        layers: [jobSchemaLambdaLayers.inputSingleFileOutputPrefix],
       });
     sourceAssetBucket.grantRead(constructJobDefinitionFunction);
 
@@ -221,12 +221,12 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
         bucket: sourceAssetBucket,
         constructJobDefinitionFunction: constructJobDefinitionFunction,
         batchEcsJobDefinition: batchEcsJobDefinition,
-        batchFargateConstruct: batchFargateConstruct
+        batchFargateConstruct: batchFargateConstruct,
       },
       createStateMachine: true,
-      stateMachineTimeout: Duration.hours(6)
+      stateMachineTimeout: Duration.hours(6),
     });
-    batchFargatePipeline.node.addDependency(sourceAssetBucket)
+    batchFargatePipeline.node.addDependency(sourceAssetBucket);
 
   }
 }

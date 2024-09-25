@@ -29,7 +29,7 @@ export interface BatchFargateSubmitJobSfnChainConstructProps extends cdk.StackPr
    * The BatchFargateConstruct to use
    */
   readonly batchFargateConstruct: BatchFargateConstruct;
-  
+
   /**
    * The BatchEcsJobDefinition to use
    */
@@ -97,7 +97,7 @@ export class BatchFargateSubmitJobSfnChainConstruct extends Construct {
     // creates pipeline definition based on event jobType input
     const constructJobDefinitionTask = new tasks.LambdaInvoke(this, `ConstructJobDefinitionTask${this.node.id}`, {
       lambdaFunction: props.constructJobDefinitionFunction,
-      resultSelector: { "Payload.$": "$.Payload" },
+      resultSelector: { 'Payload.$': '$.Payload' },
       resultPath: '$.step_data',
     }).addCatch(new sfn.Fail(
       this,

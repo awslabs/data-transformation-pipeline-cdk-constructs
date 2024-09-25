@@ -59,7 +59,7 @@ export class LambdaInvokeSfnChainConstruct extends Construct {
    * The Step Function Chain
    */
   public readonly sfnChain: sfn.Chain;
-  
+
   /**
    * The Step Function Definition Body
    */

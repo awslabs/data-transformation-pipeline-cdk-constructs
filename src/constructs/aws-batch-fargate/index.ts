@@ -28,7 +28,7 @@ export interface BatchFargateConstructProps extends cdk.StackProps {
    * The subnets to use
    */
   readonly subnets: ec2.ISubnet[];
-  
+
   /**
    * The security groups to use
    */

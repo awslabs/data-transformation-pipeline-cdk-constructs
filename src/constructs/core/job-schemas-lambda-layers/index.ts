@@ -10,42 +10,42 @@
  *  OR CONDITIONS OF ANY KIND, express or implied. See the License for the specific language governing permissions
  *  and limitations under the License.
  */
-import { Construct } from "constructs"
-import * as path from "path"
-import * as lambda from "aws-cdk-lib/aws-lambda"
-import * as pylambda from "@aws-cdk/aws-lambda-python-alpha"
+import * as path from 'path';
+import * as pylambda from '@aws-cdk/aws-lambda-python-alpha';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import { Construct } from 'constructs';
 
 export enum JobSchema {
-    /**
+  /**
      * Input and output come from S3 prefixes.
      * Input: S3 prefix
      * Output: S3 prefix
      */
-    INPUT_OUTPUT_PREFIX = 'input-output-prefix',
+  INPUT_OUTPUT_PREFIX = 'input-output-prefix',
 
-    /**
+  /**
      * Input is from a single file and output is from an S3 prefix.
      * Input: S3 prefix, object key
      * Output: S3 prefix
      */
-    INPUT_SINGLE_FILE_OUTPUT_PREFIX = 'input-single-file-output-prefix'
+  INPUT_SINGLE_FILE_OUTPUT_PREFIX = 'input-single-file-output-prefix'
 }
 
 export class JobSchemasLambdaLayersConstruct extends Construct {
-    public readonly InputOutputPrefix: pylambda.PythonLayerVersion
-    public readonly InputSingleFileOutputPrefix: pylambda.PythonLayerVersion
-  
-    constructor(parent: Construct, name: string) {
-        super(parent, name);
+  public readonly inputOutputPrefix: pylambda.PythonLayerVersion;
+  public readonly inputSingleFileOutputPrefix: pylambda.PythonLayerVersion;
 
-        this.InputOutputPrefix = new pylambda.PythonLayerVersion(this, "InputOutputPrefixSchemaLayer", {
-            entry: path.join(__dirname, "./input-output-prefix"),
-            compatibleRuntimes: [lambda.Runtime.PYTHON_3_12]
-        })
+  constructor(parent: Construct, name: string) {
+    super(parent, name);
 
-        this.InputSingleFileOutputPrefix = new pylambda.PythonLayerVersion(this, "InputSingleFileOutputPrefixSchemaLayer", {
-            entry: path.join(__dirname, "./input-single-file-output-prefix"),
-            compatibleRuntimes: [lambda.Runtime.PYTHON_3_12]
-        })
-    }
+    this.inputOutputPrefix = new pylambda.PythonLayerVersion(this, 'InputOutputPrefixSchemaLayer', {
+      entry: path.join(__dirname, './input-output-prefix'),
+      compatibleRuntimes: [lambda.Runtime.PYTHON_3_12],
+    });
+
+    this.inputSingleFileOutputPrefix = new pylambda.PythonLayerVersion(this, 'InputSingleFileOutputPrefixSchemaLayer', {
+      entry: path.join(__dirname, './input-single-file-output-prefix'),
+      compatibleRuntimes: [lambda.Runtime.PYTHON_3_12],
+    });
+  }
 }

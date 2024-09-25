@@ -14,8 +14,8 @@ import * as cdk from 'aws-cdk-lib';
 import { Duration } from 'aws-cdk-lib';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as sfn from 'aws-cdk-lib/aws-stepfunctions';
-import { Construct } from 'constructs';
 import { NagSuppressions } from 'cdk-nag';
+import { Construct } from 'constructs';
 
 /**
  * Props for the StateMachineWithLogGroupFromChainConstruct construct
@@ -32,7 +32,7 @@ export interface StateMachineWithLogGroupFromChainConstructProps extends cdk.Sta
   /**
    * Maximum run time for this state machine.
    * @default - 6 hours (Duration.hours(6))
-   * @optional   
+   * @optional
    */
   readonly timeout?: Duration;
 }
@@ -50,7 +50,7 @@ export class StateMachineWithLogGroupFromChainConstruct extends Construct {
    * The State Machine
    */
   public readonly stateMachine: sfn.StateMachine;
-  
+
   /**
    * The State Machine Log Group
    */
@@ -74,28 +74,28 @@ export class StateMachineWithLogGroupFromChainConstruct extends Construct {
       },
     );
 
-    
+
     /**
      * SFN State Machine
     */
-   
-   const timeout = props.timeout ? props.timeout : Duration.hours(6);
-   
-   this.stateMachine = new sfn.StateMachine(
-     this,
-     `${props.stateMachineName}-StateMachine`,
-     {
-       definitionBody: sfn.DefinitionBody.fromChainable(props.chain),
-       timeout: timeout,
-       logs: {
-         destination: this.stateMachineLogGroup,
-         includeExecutionData: true,
-         level: sfn.LogLevel.ALL,
+
+    const timeout = props.timeout ? props.timeout : Duration.hours(6);
+
+    this.stateMachine = new sfn.StateMachine(
+      this,
+      `${props.stateMachineName}-StateMachine`,
+      {
+        definitionBody: sfn.DefinitionBody.fromChainable(props.chain),
+        timeout: timeout,
+        logs: {
+          destination: this.stateMachineLogGroup,
+          includeExecutionData: true,
+          level: sfn.LogLevel.ALL,
         },
         tracingEnabled: true,
       },
     );
-    
+
     NagSuppressions.addResourceSuppressions(this.stateMachine, [
       {
         id: 'AwsSolutions-IAM5',

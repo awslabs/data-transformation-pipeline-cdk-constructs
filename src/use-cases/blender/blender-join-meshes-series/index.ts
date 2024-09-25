@@ -20,14 +20,14 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as s3 from 'aws-cdk-lib/aws-s3';
+import { NagSuppressions } from 'cdk-nag';
 import { Construct } from 'constructs';
-import { VpcBatchFargateConstruct } from '../../../constructs/aws-vpc-batch-fargate';
 import { BatchFargateConstruct } from '../../../constructs/aws-batch-fargate';
-import { BatchFargateSeriesPipelineConstruct } from '../../../patterns/aws-batch-fargate-series-pipeline';
 import { BatchFargateSubmitJobSfnChainConstructProps } from '../../../constructs/aws-batch-fargate-submit-job-sfn-chain';
+import { VpcBatchFargateConstruct } from '../../../constructs/aws-vpc-batch-fargate';
 import { JobSchemasLambdaLayersConstruct, JobSchema } from '../../../constructs/core/job-schemas-lambda-layers';
 import { StepConfig, StepType } from '../../../constructs/core/job-utils';
-import { NagSuppressions } from 'cdk-nag';
+import { BatchFargateSeriesPipelineConstruct } from '../../../patterns/aws-batch-fargate-series-pipeline';
 
 
 export class BlenderJoinMeshesStack extends cdk.Stack {
@@ -66,11 +66,11 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
         ec2.InterfaceVpcEndpointAwsService.ECR_DOCKER,
         ec2.InterfaceVpcEndpointAwsService.BATCH,
         ec2.InterfaceVpcEndpointAwsService.CLOUDWATCH_LOGS,
-        ec2.InterfaceVpcEndpointAwsService.STEP_FUNCTIONS
-      ]
+        ec2.InterfaceVpcEndpointAwsService.STEP_FUNCTIONS,
+      ],
     });
 
-    const jobSchemaLambdaLayers = new JobSchemasLambdaLayersConstruct(this, 'JobSchemaLambdaLayers')
+    const jobSchemaLambdaLayers = new JobSchemasLambdaLayersConstruct(this, 'JobSchemaLambdaLayers');
 
     /**
      * Batch Resources
@@ -107,7 +107,7 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
         assumedBy: new iam.ServicePrincipal('ecs-tasks.amazonaws.com'),
         managedPolicies: [
           iam.ManagedPolicy.fromAwsManagedPolicyName(
-            'service-role/AmazonECSTaskExecutionRolePolicy'
+            'service-role/AmazonECSTaskExecutionRolePolicy',
           ),
         ],
       },
@@ -122,8 +122,8 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
           InputBucketPolicy: bucketPolicy,
           OutputBucketPolicy: bucketPolicy,
           StateTaskPolicy: stateTaskPolicy,
-        }
-      }
+        },
+      },
     );
 
     NagSuppressions.addResourceSuppressions(
@@ -139,7 +139,7 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
         {
           id: 'AwsSolutions-IAM5',
           reason: 'Need wildcard for access to S3 bucket contents.',
-        }
+        },
       ],
       true,
     );
@@ -161,7 +161,7 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
       this,
       'BatchJobDefinition',
       {
-        jobDefinitionName: "BlenderJobDefinition",
+        jobDefinitionName: 'BlenderJobDefinition',
         retryAttempts: 1,
         container: new batch.EcsFargateContainerDefinition(this, 'BatchJobDefinitionContainer', {
           cpu: 2,
@@ -197,7 +197,7 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
         code: lambda.Code.fromAsset(path.join(__dirname, '../../../constructs/core/lambda/constructJobDefinition')),
         handler: 'index.lambda_handler',
         timeout: Duration.seconds(60),
-        layers: [jobSchemaLambdaLayers.InputOutputPrefix]
+        layers: [jobSchemaLambdaLayers.inputOutputPrefix],
       });
     sourceAssetBucket.grantRead(constructJobDefinitionFunction);
 
@@ -222,16 +222,16 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
       bucket: sourceAssetBucket,
       batchFargateConstruct: batchFargateConstruct,
       batchEcsJobDefinition: batchEcsJobDefinition,
-      constructJobDefinitionFunction: constructJobDefinitionFunction
-    }
+      constructJobDefinitionFunction: constructJobDefinitionFunction,
+    };
 
     const batchFargatePipeline = new BatchFargateSeriesPipelineConstruct(this, 'BlenderJoinMeshesPipeline', {
       ...props,
       pipelineName: 'BlenderJoinMeshes',
       steps: [step, step],
       createStateMachine: true,
-      stateMachineTimeout: Duration.hours(6)
+      stateMachineTimeout: Duration.hours(6),
     });
-    batchFargatePipeline.node.addDependency(sourceAssetBucket)
+    batchFargatePipeline.node.addDependency(sourceAssetBucket);
   }
 }

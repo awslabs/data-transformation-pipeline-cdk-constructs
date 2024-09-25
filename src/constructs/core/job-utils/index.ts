@@ -10,19 +10,19 @@
  *  OR CONDITIONS OF ANY KIND, express or implied. See the License for the specific language governing permissions
  *  and limitations under the License.
  */
-import { JobSchema } from "../job-schemas-lambda-layers";
+import { JobSchema } from '../job-schemas-lambda-layers';
 
 export class StepConfig {
-    readonly type: StepType;
-    readonly schema: JobSchema;
+  readonly type: StepType;
+  readonly schema: JobSchema;
 
-    constructor(type: StepType, schema: JobSchema) {
-        this.type = type;
-        this.schema = schema;
-    }
+  constructor(type: StepType, schema: JobSchema) {
+    this.type = type;
+    this.schema = schema;
+  }
 }
 
 export enum StepType {
-    JOIN = 'JOIN',
-    BOUNDINGBOX = 'BOUNDINGBOX'
+  JOIN = 'JOIN',
+  BOUNDINGBOX = 'BOUNDINGBOX'
 }

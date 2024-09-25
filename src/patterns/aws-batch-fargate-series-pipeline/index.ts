@@ -14,10 +14,10 @@ import * as cdk from 'aws-cdk-lib';
 import { Duration } from 'aws-cdk-lib';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as sfn from 'aws-cdk-lib/aws-stepfunctions';
+import { NagSuppressions } from 'cdk-nag';
 import { Construct } from 'constructs';
 import { BatchFargateSubmitJobSfnChainConstruct, BatchFargateSubmitJobSfnChainConstructProps } from '../../constructs/aws-batch-fargate-submit-job-sfn-chain';
 import { StateMachineWithLogGroupFromChainConstruct } from '../../constructs/aws-state-machine-with-log-group-from-chain';
-import { NagSuppressions } from 'cdk-nag';
 import { JobSchema } from '../../constructs/core/job-schemas-lambda-layers';
 import { StepType } from '../../constructs/core/job-utils';
 
@@ -27,7 +27,7 @@ import { StepType } from '../../constructs/core/job-utils';
 export interface BatchFargateSeriesPipelineConstructProps extends cdk.StackProps {
   /**
    * The name of the pipeline
-   */  
+   */
   readonly pipelineName: string;
 
   /**
@@ -69,7 +69,7 @@ export class BatchFargateSeriesPipelineConstruct extends Construct {
   /**
    * The Step Function State Machine Log Group
    * @default - 6 hours (Duration.hours(6))
-   * @optional 
+   * @optional
    */
   public readonly stateMachineLogGroup?: logs.LogGroup;
 
@@ -78,25 +78,25 @@ export class BatchFargateSeriesPipelineConstruct extends Construct {
 
     props = { ...defaultProps, ...props };
 
-    const submitJobStates: sfn.Chain[] = []
+    const submitJobStates: sfn.Chain[] = [];
 
-    const passStates: sfn.State[] = []
+    const passStates: sfn.State[] = [];
 
     props.steps.forEach((step, index) => {
       const stepNumber = index + 1;
 
-      const jobState = new BatchFargateSubmitJobSfnChainConstruct(this, 'BatchFargateSubmitJobSfnChainConstructStep_' + stepNumber, step)
+      const jobState = new BatchFargateSubmitJobSfnChainConstruct(this, 'BatchFargateSubmitJobSfnChainConstructStep_' + stepNumber, step);
 
       NagSuppressions.addResourceSuppressions(
         jobState,
         [
           {
             id: 'AwsSolutions-IAM5',
-            reason: 'Wildcards needed in DefaultPolicy'
-          }
+            reason: 'Wildcards needed in DefaultPolicy',
+          },
         ],
-        true
-      )
+        true,
+      );
       submitJobStates.push(jobState.sfnChain);
 
       if (stepNumber < props.steps.length) {
@@ -116,7 +116,7 @@ export class BatchFargateSeriesPipelineConstruct extends Construct {
       const stateMachineWithLogGroup = new StateMachineWithLogGroupFromChainConstruct(this, 'StateMachineWithLogGroupConstruct', {
         stateMachineName: props.pipelineName + '-StateMachine',
         chain: chain,
-        timeout: props.stateMachineTimeout
+        timeout: props.stateMachineTimeout,
       });
 
       this.stateMachine = stateMachineWithLogGroup.stateMachine;
@@ -134,10 +134,10 @@ export class BatchFargateSeriesPipelineConstruct extends Construct {
               step_schema: stepSchema.toString(),
               source_bucket: inputBucket,
               inputs_prefix: `step-${stepNumber}`,
-              outputs_prefix: stepNumber === props.steps.length - 1 ? 'final-output' : `step-${stepNumber + 1}`
+              outputs_prefix: stepNumber === props.steps.length - 1 ? 'final-output' : `step-${stepNumber + 1}`,
             }),
-            resultPath: '$.step_data'
-          })
+            resultPath: '$.step_data',
+          });
       }
     }
 
