@@ -40,7 +40,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   devDeps: [
     'aws-cdk-lib',
     'constructs',
-    'jest',
   ],
 });
 
