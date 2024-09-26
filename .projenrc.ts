@@ -41,6 +41,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'aws-cdk-lib',
     'constructs',
   ],
+  sampleCode: false
 });
 
 project.synth();
