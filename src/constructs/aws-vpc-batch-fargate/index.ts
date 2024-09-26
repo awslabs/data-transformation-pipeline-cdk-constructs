@@ -154,7 +154,7 @@ export class VpcBatchFargateConstruct extends Construct {
     // Create VPC Gateway endpoints
     if (props.gatewayVpcEndpointServices != undefined) {
       for (let service of props.gatewayVpcEndpointServices) {
-        this.vpc.addGatewayEndpoint('S3Endpoint', {
+        this.vpc.addGatewayEndpoint(service.name.split('.').at(-1) + 'Endpoint', {
           service: service,
         });
       }
