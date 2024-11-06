@@ -52,13 +52,13 @@ The name of a Data Transformation Pipeline Construct is composed by concatenatin
 
 For the construct file name, separate the all lower-case service names by dashes and preface the whole name with “aws-“. For Example:
 
-&emsp; &emsp; &emsp;aws-batch-fargate-parallel-pipeline
-&emsp; &emsp; &emsp;aws-state-machine-with-log-group-from-chain
+> aws-batch-fargate-parallel-pipeline \
+> aws-state-machine-with-log-group-from-chain
 
 For the Typescript class name, use Pascal casing. For Example:
 
-&emsp; &emsp; &emsp;BatchFargateParallelPipelineConstruct
-&emsp; &emsp; &emsp;StateMachineWithLogGroupFromChainConstruct
+> BatchFargateParallelPipelineConstruct \
+> StateMachineWithLogGroupFromChainConstruct
 
 Once again, these rules became clear as we wrote all of the existing constructs and not all of the early constructs comply with these rules.
 
