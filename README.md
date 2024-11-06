@@ -7,12 +7,10 @@
 > This means that while you may use them, you may need to update your source code when upgrading to a newer version of this package.
 
 ---
-<!--
-[![View on Construct Hub](https://constructs.dev/badge?package=generative-ai-cdk-constructs)](https://constructs.dev/packages/@cdklabs/generative-ai-cdk-constructs)
+### Project Structure Notice
+> Due to the experimental state of this project, it is not currently published to package managers (e.g. NPM, or PyPI).
 
-[![PyPI version](https://img.shields.io/pypi/v/cdklabs.generative-ai-cdk-constructs)](https://pypi.org/project/cdklabs.generative-ai-cdk-constructs/)
-[![npm version](https://img.shields.io/npm/v/@cdklabs/generative-ai-cdk-constructs)](https://www.npmjs.com/package/@cdklabs/generative-ai-cdk-constructs)
--->
+---
 
 ## Table of contents
 
@@ -49,7 +47,7 @@ If you want to add a new construct to the library, check out our [design guideli
 
 #### For TypeScript:
 - Clone this project locally
-  - Run `git clone git@ssh.gitlab.aws.dev:envision-engineering-amer/tooling/spatial-tools/data-transformation-pipeline-cdk-constructs.git`
+  - Run `git clone https://github.com/awslabs/data-transformation-pipeline-cdk-constructs.git`
 - Navigate to the project directory
 - Create a directory within the cloned project to host your CDK project
   - *Note:* There is a `cdk-sample` directory in the project with an [example CDK project](./cdk-sample/README.md)
@@ -89,7 +87,8 @@ The following constructs are available in the library:
 
 # Contributors
 
-[Add live contributors link here]
+[![contributors](https://contrib.rocks/image?repo=awslabs/data-transformation-pipeline-cdk-constructs&max=2000)](https://github.com/awslabs/data-transformation-pipeline-cdk-constructs/graphs/contributors)
+
 
 # License
 
