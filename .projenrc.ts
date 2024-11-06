@@ -1,4 +1,4 @@
-import { awscdk, ReleasableCommits } from 'projen';
+import { awscdk } from 'projen';
 
 // Constants
 const GITHUB_USER = 'awslabs';
@@ -41,7 +41,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // Custom license consisting of Apache 2.0 & GPLv3
   licensed: false,
   release: false,
-  releasableCommits: ReleasableCommits.featuresAndFixes(),
+  depsUpgrade: false,
   sampleCode: false,
 });
 
