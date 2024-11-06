@@ -40,6 +40,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   ],
   // Custom license consisting of Apache 2.0 & GPLv3
   licensed: false,
+  release: false,
   releasableCommits: ReleasableCommits.featuresAndFixes(),
   sampleCode: false,
 });
