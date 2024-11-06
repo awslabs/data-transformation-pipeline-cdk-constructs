@@ -1,4 +1,4 @@
-import { awscdk } from 'projen';
+import { awscdk, ReleasableCommits } from 'projen';
 
 // Constants
 const GITHUB_USER = 'awslabs';
@@ -27,9 +27,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '!.ort.yml',
     '.idea',
     '.vscode',
-    'website/build',
-    'website/node_modules',
-    'website/.docusaurus',
   ],
   deps: [
     'cdk-nag',
@@ -41,7 +38,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'aws-cdk-lib',
     'constructs',
   ],
-  sampleCode: false
+  // Custom license consisting of Apache 2.0 & GPLv3
+  licensed: false,
+  releasableCommits: ReleasableCommits.featuresAndFixes(),
+  sampleCode: false,
 });
 
 project.synth();

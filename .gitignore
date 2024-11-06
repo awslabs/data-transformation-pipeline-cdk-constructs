@@ -5,7 +5,6 @@
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
 !/package.json
-!/LICENSE
 !/.npmignore
 logs
 *.log
@@ -37,9 +36,6 @@ __pycache__/
 !.ort.yml
 .idea
 .vscode
-website/build
-website/node_modules
-website/.docusaurus
 /test-reports/
 junit.xml
 /coverage/
