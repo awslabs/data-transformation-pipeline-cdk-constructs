@@ -2,7 +2,7 @@ import { awscdk } from 'projen';
 
 // Constants
 const GITHUB_USER = 'awslabs';
-const PUBLICATION_NAMESPACE = 'cdklabs';
+const PUBLICATION_NAMESPACE = 'awslabs';
 const PROJECT_NAME = 'data-transformation-pipeline-cdk-constructs';
 const CDK_VERSION: string = '2.152.0';
 

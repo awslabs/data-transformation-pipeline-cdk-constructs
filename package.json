@@ -1,5 +1,5 @@
 {
-  "name": "@cdklabs/data-transformation-pipeline-cdk-constructs",
+  "name": "@awslabs/data-transformation-pipeline-cdk-constructs",
   "description": "AWS Data Transformation Pipeline Construct Library",
   "repository": {
     "type": "git",

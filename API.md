@@ -2,41 +2,41 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### BatchFargateConstruct <a name="BatchFargateConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct"></a>
+### BatchFargateConstruct <a name="BatchFargateConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct"></a>
 
 A construct to create a Batch compute environment with Fargate.
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer"></a>
 
 ```typescript
-import { BatchFargateConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new BatchFargateConstruct(parent: Construct, name: string, props: BatchFargateConstructProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps">BatchFargateConstructProps</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps">BatchFargateConstructProps</a></code> | *No description.* |
 
 ---
 
-##### `parent`<sup>Required</sup> <a name="parent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.parent"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.parent"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.name"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps">BatchFargateConstructProps</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps">BatchFargateConstructProps</a>
 
 ---
 
@@ -44,11 +44,11 @@ new BatchFargateConstruct(parent: Construct, name: string, props: BatchFargateCo
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -60,14 +60,14 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.isConstruct"></a>
 
 ```typescript
-import { BatchFargateConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BatchFargateConstruct.isConstruct(x: any)
 ```
@@ -88,7 +88,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -100,12 +100,12 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.property.batchJobQueue">batchJobQueue</a></code> | <code>aws-cdk-lib.aws_batch.JobQueue</code> | The Batch job queue associated with this compute environment. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.property.batchJobQueue">batchJobQueue</a></code> | <code>aws-cdk-lib.aws_batch.JobQueue</code> | The Batch job queue associated with this compute environment. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -117,7 +117,7 @@ The tree node.
 
 ---
 
-##### `batchJobQueue`<sup>Required</sup> <a name="batchJobQueue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.property.batchJobQueue"></a>
+##### `batchJobQueue`<sup>Required</sup> <a name="batchJobQueue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct.property.batchJobQueue"></a>
 
 ```typescript
 public readonly batchJobQueue: JobQueue;
@@ -130,41 +130,41 @@ The Batch job queue associated with this compute environment.
 ---
 
 
-### BatchFargateParallelPipelineConstruct <a name="BatchFargateParallelPipelineConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct"></a>
+### BatchFargateParallelPipelineConstruct <a name="BatchFargateParallelPipelineConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct"></a>
 
 Deploy a Batch-Fargate Parallel Pipeline.
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer"></a>
 
 ```typescript
-import { BatchFargateParallelPipelineConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateParallelPipelineConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new BatchFargateParallelPipelineConstruct(parent: Construct, name: string, props: BatchFargateParallelPipelineConstructProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps">BatchFargateParallelPipelineConstructProps</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps">BatchFargateParallelPipelineConstructProps</a></code> | *No description.* |
 
 ---
 
-##### `parent`<sup>Required</sup> <a name="parent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.parent"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.parent"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.name"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps">BatchFargateParallelPipelineConstructProps</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps">BatchFargateParallelPipelineConstructProps</a>
 
 ---
 
@@ -172,11 +172,11 @@ new BatchFargateParallelPipelineConstruct(parent: Construct, name: string, props
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -188,14 +188,14 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.isConstruct"></a>
 
 ```typescript
-import { BatchFargateParallelPipelineConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateParallelPipelineConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BatchFargateParallelPipelineConstruct.isConstruct(x: any)
 ```
@@ -216,7 +216,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -228,14 +228,14 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.chain">chain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | The Step Function Chain. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | The Step Function State Machine. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.stateMachineLogGroup">stateMachineLogGroup</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | The Step Function State Machine Log Group. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.chain">chain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | The Step Function Chain. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | The Step Function State Machine. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.stateMachineLogGroup">stateMachineLogGroup</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | The Step Function State Machine Log Group. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -247,7 +247,7 @@ The tree node.
 
 ---
 
-##### `chain`<sup>Required</sup> <a name="chain" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.chain"></a>
+##### `chain`<sup>Required</sup> <a name="chain" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.chain"></a>
 
 ```typescript
 public readonly chain: Chain;
@@ -259,7 +259,7 @@ The Step Function Chain.
 
 ---
 
-##### `stateMachine`<sup>Optional</sup> <a name="stateMachine" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.stateMachine"></a>
+##### `stateMachine`<sup>Optional</sup> <a name="stateMachine" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.stateMachine"></a>
 
 ```typescript
 public readonly stateMachine: StateMachine;
@@ -271,7 +271,7 @@ The Step Function State Machine.
 
 ---
 
-##### `stateMachineLogGroup`<sup>Optional</sup> <a name="stateMachineLogGroup" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.stateMachineLogGroup"></a>
+##### `stateMachineLogGroup`<sup>Optional</sup> <a name="stateMachineLogGroup" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstruct.property.stateMachineLogGroup"></a>
 
 ```typescript
 public readonly stateMachineLogGroup: LogGroup;
@@ -284,41 +284,41 @@ The Step Function State Machine Log Group.
 ---
 
 
-### BatchFargateSeriesPipelineConstruct <a name="BatchFargateSeriesPipelineConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct"></a>
+### BatchFargateSeriesPipelineConstruct <a name="BatchFargateSeriesPipelineConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct"></a>
 
 Deploy a Batch-Fargate Series Pipeline.
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer"></a>
 
 ```typescript
-import { BatchFargateSeriesPipelineConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateSeriesPipelineConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new BatchFargateSeriesPipelineConstruct(parent: Construct, name: string, props: BatchFargateSeriesPipelineConstructProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps">BatchFargateSeriesPipelineConstructProps</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps">BatchFargateSeriesPipelineConstructProps</a></code> | *No description.* |
 
 ---
 
-##### `parent`<sup>Required</sup> <a name="parent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.parent"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.parent"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.name"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps">BatchFargateSeriesPipelineConstructProps</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps">BatchFargateSeriesPipelineConstructProps</a>
 
 ---
 
@@ -326,11 +326,11 @@ new BatchFargateSeriesPipelineConstruct(parent: Construct, name: string, props: 
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -342,14 +342,14 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.isConstruct"></a>
 
 ```typescript
-import { BatchFargateSeriesPipelineConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateSeriesPipelineConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BatchFargateSeriesPipelineConstruct.isConstruct(x: any)
 ```
@@ -370,7 +370,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -382,14 +382,14 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.chain">chain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | The Step Function Chain. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | The Step Function State Machine. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.stateMachineLogGroup">stateMachineLogGroup</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | The Step Function State Machine Log Group. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.chain">chain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | The Step Function Chain. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | The Step Function State Machine. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.stateMachineLogGroup">stateMachineLogGroup</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | The Step Function State Machine Log Group. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -401,7 +401,7 @@ The tree node.
 
 ---
 
-##### `chain`<sup>Required</sup> <a name="chain" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.chain"></a>
+##### `chain`<sup>Required</sup> <a name="chain" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.chain"></a>
 
 ```typescript
 public readonly chain: Chain;
@@ -413,7 +413,7 @@ The Step Function Chain.
 
 ---
 
-##### `stateMachine`<sup>Optional</sup> <a name="stateMachine" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.stateMachine"></a>
+##### `stateMachine`<sup>Optional</sup> <a name="stateMachine" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.stateMachine"></a>
 
 ```typescript
 public readonly stateMachine: StateMachine;
@@ -425,7 +425,7 @@ The Step Function State Machine.
 
 ---
 
-##### `stateMachineLogGroup`<sup>Optional</sup> <a name="stateMachineLogGroup" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.stateMachineLogGroup"></a>
+##### `stateMachineLogGroup`<sup>Optional</sup> <a name="stateMachineLogGroup" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstruct.property.stateMachineLogGroup"></a>
 
 ```typescript
 public readonly stateMachineLogGroup: LogGroup;
@@ -439,41 +439,41 @@ The Step Function State Machine Log Group.
 ---
 
 
-### BatchFargateSubmitJobSfnChainConstruct <a name="BatchFargateSubmitJobSfnChainConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct"></a>
+### BatchFargateSubmitJobSfnChainConstruct <a name="BatchFargateSubmitJobSfnChainConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct"></a>
 
 A construct to create a Step Function Chain to submit a job to Batch.
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer"></a>
 
 ```typescript
-import { BatchFargateSubmitJobSfnChainConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateSubmitJobSfnChainConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new BatchFargateSubmitJobSfnChainConstruct(parent: Construct, name: string, props: BatchFargateSubmitJobSfnChainConstructProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a></code> | *No description.* |
 
 ---
 
-##### `parent`<sup>Required</sup> <a name="parent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.parent"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.parent"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.name"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a>
 
 ---
 
@@ -481,11 +481,11 @@ new BatchFargateSubmitJobSfnChainConstruct(parent: Construct, name: string, prop
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -497,14 +497,14 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.isConstruct"></a>
 
 ```typescript
-import { BatchFargateSubmitJobSfnChainConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateSubmitJobSfnChainConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BatchFargateSubmitJobSfnChainConstruct.isConstruct(x: any)
 ```
@@ -525,7 +525,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -537,15 +537,15 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.sfnChain">sfnChain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | The Step Function Chain. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.sfnDefinitionBody">sfnDefinitionBody</a></code> | <code>aws-cdk-lib.aws_stepfunctions.DefinitionBody</code> | The Step Function Definition Body. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.stepConfig">stepConfig</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig">StepConfig</a></code> | The StepConfig to use for the Step Function Chain step. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.bucket">bucket</a></code> | <code>aws-cdk-lib.aws_s3.Bucket</code> | The S3 bucket to use for source files. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.sfnChain">sfnChain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | The Step Function Chain. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.sfnDefinitionBody">sfnDefinitionBody</a></code> | <code>aws-cdk-lib.aws_stepfunctions.DefinitionBody</code> | The Step Function Definition Body. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.stepConfig">stepConfig</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig">StepConfig</a></code> | The StepConfig to use for the Step Function Chain step. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.bucket">bucket</a></code> | <code>aws-cdk-lib.aws_s3.Bucket</code> | The S3 bucket to use for source files. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -557,7 +557,7 @@ The tree node.
 
 ---
 
-##### `sfnChain`<sup>Required</sup> <a name="sfnChain" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.sfnChain"></a>
+##### `sfnChain`<sup>Required</sup> <a name="sfnChain" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.sfnChain"></a>
 
 ```typescript
 public readonly sfnChain: Chain;
@@ -569,7 +569,7 @@ The Step Function Chain.
 
 ---
 
-##### `sfnDefinitionBody`<sup>Required</sup> <a name="sfnDefinitionBody" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.sfnDefinitionBody"></a>
+##### `sfnDefinitionBody`<sup>Required</sup> <a name="sfnDefinitionBody" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.sfnDefinitionBody"></a>
 
 ```typescript
 public readonly sfnDefinitionBody: DefinitionBody;
@@ -581,19 +581,19 @@ The Step Function Definition Body.
 
 ---
 
-##### `stepConfig`<sup>Required</sup> <a name="stepConfig" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.stepConfig"></a>
+##### `stepConfig`<sup>Required</sup> <a name="stepConfig" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.stepConfig"></a>
 
 ```typescript
 public readonly stepConfig: StepConfig;
 ```
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig">StepConfig</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig">StepConfig</a>
 
 The StepConfig to use for the Step Function Chain step.
 
 ---
 
-##### `bucket`<sup>Optional</sup> <a name="bucket" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.bucket"></a>
+##### `bucket`<sup>Optional</sup> <a name="bucket" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstruct.property.bucket"></a>
 
 ```typescript
 public readonly bucket: Bucket;
@@ -607,37 +607,37 @@ The S3 bucket to use for source files.
 ---
 
 
-### BlenderBoundingBoxMeshesStack <a name="BlenderBoundingBoxMeshesStack" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack"></a>
+### BlenderBoundingBoxMeshesStack <a name="BlenderBoundingBoxMeshesStack" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack"></a>
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer"></a>
 
 ```typescript
-import { BlenderBoundingBoxMeshesStack } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BlenderBoundingBoxMeshesStack } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new BlenderBoundingBoxMeshesStack(scope: Construct, id: string, props?: StackProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.StackProps</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.StackProps</code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Optional</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.props"></a>
+##### `props`<sup>Optional</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.Initializer.parameter.props"></a>
 
 - *Type:* aws-cdk-lib.StackProps
 
@@ -647,25 +647,25 @@ new BlenderBoundingBoxMeshesStack(scope: Construct, id: string, props?: StackPro
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata">addMetadata</a></code> | Adds an arbitary key-value pair, with information you want to record about the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.formatArn">formatArn</a></code> | Creates an ARN from components. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata">addMetadata</a></code> | Adds an arbitary key-value pair, with information you want to record about the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.formatArn">formatArn</a></code> | Creates an ARN from components. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toString"></a>
 
 ```typescript
 public toString(): string
@@ -673,7 +673,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addDependency` <a name="addDependency" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency"></a>
+##### `addDependency` <a name="addDependency" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency"></a>
 
 ```typescript
 public addDependency(target: Stack, reason?: string): void
@@ -684,19 +684,19 @@ Add a dependency between this stack and another stack.
 This can be used to define dependencies between any two stacks within an
 app, and also supports nested stacks.
 
-###### `target`<sup>Required</sup> <a name="target" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency.parameter.target"></a>
+###### `target`<sup>Required</sup> <a name="target" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency.parameter.target"></a>
 
 - *Type:* aws-cdk-lib.Stack
 
 ---
 
-###### `reason`<sup>Optional</sup> <a name="reason" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency.parameter.reason"></a>
+###### `reason`<sup>Optional</sup> <a name="reason" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency.parameter.reason"></a>
 
 - *Type:* string
 
 ---
 
-##### `addMetadata` <a name="addMetadata" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata"></a>
+##### `addMetadata` <a name="addMetadata" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata"></a>
 
 ```typescript
 public addMetadata(key: string, value: any): void
@@ -708,19 +708,19 @@ These get translated to the Metadata section of the generated template.
 
 > [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html)
 
-###### `key`<sup>Required</sup> <a name="key" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata.parameter.key"></a>
+###### `key`<sup>Required</sup> <a name="key" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata.parameter.key"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `addTransform` <a name="addTransform" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addTransform"></a>
+##### `addTransform` <a name="addTransform" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addTransform"></a>
 
 ```typescript
 public addTransform(transform: string): void
@@ -741,7 +741,7 @@ stack.addTransform('AWS::Serverless-2016-10-31')
 ```
 
 
-###### `transform`<sup>Required</sup> <a name="transform" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addTransform.parameter.transform"></a>
+###### `transform`<sup>Required</sup> <a name="transform" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addTransform.parameter.transform"></a>
 
 - *Type:* string
 
@@ -749,7 +749,7 @@ The transform to add.
 
 ---
 
-##### `exportStringListValue` <a name="exportStringListValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue"></a>
+##### `exportStringListValue` <a name="exportStringListValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue"></a>
 
 ```typescript
 public exportStringListValue(exportedValue: any, options?: ExportValueOptions): string[]
@@ -775,19 +775,19 @@ the resource and the manual export.
 
 See `exportValue` for an example of this process.
 
-###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue.parameter.exportedValue"></a>
+###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue.parameter.exportedValue"></a>
 
 - *Type:* any
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.ExportValueOptions
 
 ---
 
-##### `exportValue` <a name="exportValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue"></a>
+##### `exportValue` <a name="exportValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue"></a>
 
 ```typescript
 public exportValue(exportedValue: any, options?: ExportValueOptions): string
@@ -836,19 +836,19 @@ Instead, the process takes two deployments:
 - Don't forget to remove the `exportValue()` call as well.
 - Deploy again (this time only the `producerStack` will be changed -- the bucket will be deleted).
 
-###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue.parameter.exportedValue"></a>
+###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue.parameter.exportedValue"></a>
 
 - *Type:* any
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.ExportValueOptions
 
 ---
 
-##### `formatArn` <a name="formatArn" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.formatArn"></a>
+##### `formatArn` <a name="formatArn" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.formatArn"></a>
 
 ```typescript
 public formatArn(components: ArnComponents): string
@@ -870,13 +870,13 @@ The required ARN pieces that are omitted will be taken from the stack that
 the 'scope' is attached to. If all ARN pieces are supplied, the supplied scope
 can be 'undefined'.
 
-###### `components`<sup>Required</sup> <a name="components" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.formatArn.parameter.components"></a>
+###### `components`<sup>Required</sup> <a name="components" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.formatArn.parameter.components"></a>
 
 - *Type:* aws-cdk-lib.ArnComponents
 
 ---
 
-##### `getLogicalId` <a name="getLogicalId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.getLogicalId"></a>
+##### `getLogicalId` <a name="getLogicalId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.getLogicalId"></a>
 
 ```typescript
 public getLogicalId(element: CfnElement): string
@@ -892,7 +892,7 @@ This method uses the protected method `allocateLogicalId` to render the
 logical ID for an element. To modify the naming scheme, extend the `Stack`
 class and override this method.
 
-###### `element`<sup>Required</sup> <a name="element" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.getLogicalId.parameter.element"></a>
+###### `element`<sup>Required</sup> <a name="element" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.getLogicalId.parameter.element"></a>
 
 - *Type:* aws-cdk-lib.CfnElement
 
@@ -900,7 +900,7 @@ The CloudFormation element for which a logical identity is needed.
 
 ---
 
-##### `regionalFact` <a name="regionalFact" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.regionalFact"></a>
+##### `regionalFact` <a name="regionalFact" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.regionalFact"></a>
 
 ```typescript
 public regionalFact(factName: string, defaultValue?: string): string
@@ -924,19 +924,19 @@ not have to worry about regional facts.
 If `defaultValue` is not given, it is an error if the fact is unknown for
 the given region.
 
-###### `factName`<sup>Required</sup> <a name="factName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.regionalFact.parameter.factName"></a>
+###### `factName`<sup>Required</sup> <a name="factName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.regionalFact.parameter.factName"></a>
 
 - *Type:* string
 
 ---
 
-###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.regionalFact.parameter.defaultValue"></a>
+###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.regionalFact.parameter.defaultValue"></a>
 
 - *Type:* string
 
 ---
 
-##### `renameLogicalId` <a name="renameLogicalId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.renameLogicalId"></a>
+##### `renameLogicalId` <a name="renameLogicalId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.renameLogicalId"></a>
 
 ```typescript
 public renameLogicalId(oldId: string, newId: string): void
@@ -947,19 +947,19 @@ Rename a generated logical identities.
 To modify the naming scheme strategy, extend the `Stack` class and
 override the `allocateLogicalId` method.
 
-###### `oldId`<sup>Required</sup> <a name="oldId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.renameLogicalId.parameter.oldId"></a>
+###### `oldId`<sup>Required</sup> <a name="oldId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.renameLogicalId.parameter.oldId"></a>
 
 - *Type:* string
 
 ---
 
-###### `newId`<sup>Required</sup> <a name="newId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.renameLogicalId.parameter.newId"></a>
+###### `newId`<sup>Required</sup> <a name="newId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.renameLogicalId.parameter.newId"></a>
 
 - *Type:* string
 
 ---
 
-##### `reportMissingContextKey` <a name="reportMissingContextKey" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.reportMissingContextKey"></a>
+##### `reportMissingContextKey` <a name="reportMissingContextKey" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.reportMissingContextKey"></a>
 
 ```typescript
 public reportMissingContextKey(report: MissingContext): void
@@ -970,7 +970,7 @@ Indicate that a context key was expected.
 Contains instructions which will be emitted into the cloud assembly on how
 the key should be supplied.
 
-###### `report`<sup>Required</sup> <a name="report" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.reportMissingContextKey.parameter.report"></a>
+###### `report`<sup>Required</sup> <a name="report" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.reportMissingContextKey.parameter.report"></a>
 
 - *Type:* aws-cdk-lib.cloud_assembly_schema.MissingContext
 
@@ -978,7 +978,7 @@ The set of parameters needed to obtain the context.
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.resolve"></a>
+##### `resolve` <a name="resolve" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.resolve"></a>
 
 ```typescript
 public resolve(obj: any): any
@@ -986,13 +986,13 @@ public resolve(obj: any): any
 
 Resolve a tokenized value in the context of the current stack.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.resolve.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.resolve.parameter.obj"></a>
 
 - *Type:* any
 
 ---
 
-##### `splitArn` <a name="splitArn" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.splitArn"></a>
+##### `splitArn` <a name="splitArn" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.splitArn"></a>
 
 ```typescript
 public splitArn(arn: string, arnFormat: ArnFormat): ArnComponents
@@ -1005,7 +1005,7 @@ and a Token representing a dynamic CloudFormation expression
 (in which case the returned components will also be dynamic CloudFormation expressions,
 encoded as Tokens).
 
-###### `arn`<sup>Required</sup> <a name="arn" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.splitArn.parameter.arn"></a>
+###### `arn`<sup>Required</sup> <a name="arn" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.splitArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -1013,7 +1013,7 @@ the ARN to split into its components.
 
 ---
 
-###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.splitArn.parameter.arnFormat"></a>
+###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.splitArn.parameter.arnFormat"></a>
 
 - *Type:* aws-cdk-lib.ArnFormat
 
@@ -1021,7 +1021,7 @@ the expected format of 'arn' - depends on what format the service 'arn' represen
 
 ---
 
-##### `toJsonString` <a name="toJsonString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toJsonString"></a>
+##### `toJsonString` <a name="toJsonString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toJsonString"></a>
 
 ```typescript
 public toJsonString(obj: any, space?: number): string
@@ -1029,19 +1029,19 @@ public toJsonString(obj: any, space?: number): string
 
 Convert an object, potentially containing tokens, to a JSON string.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toJsonString.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toJsonString.parameter.obj"></a>
 
 - *Type:* any
 
 ---
 
-###### `space`<sup>Optional</sup> <a name="space" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toJsonString.parameter.space"></a>
+###### `space`<sup>Optional</sup> <a name="space" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toJsonString.parameter.space"></a>
 
 - *Type:* number
 
 ---
 
-##### `toYamlString` <a name="toYamlString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toYamlString"></a>
+##### `toYamlString` <a name="toYamlString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toYamlString"></a>
 
 ```typescript
 public toYamlString(obj: any): string
@@ -1049,7 +1049,7 @@ public toYamlString(obj: any): string
 
 Convert an object, potentially containing tokens, to a YAML string.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toYamlString.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toYamlString.parameter.obj"></a>
 
 - *Type:* any
 
@@ -1059,16 +1059,16 @@ Convert an object, potentially containing tokens, to a YAML string.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isConstruct"></a>
 
 ```typescript
-import { BlenderBoundingBoxMeshesStack } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BlenderBoundingBoxMeshesStack } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BlenderBoundingBoxMeshesStack.isConstruct(x: any)
 ```
@@ -1089,7 +1089,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -1097,10 +1097,10 @@ Any object.
 
 ---
 
-##### `isStack` <a name="isStack" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isStack"></a>
+##### `isStack` <a name="isStack" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isStack"></a>
 
 ```typescript
-import { BlenderBoundingBoxMeshesStack } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BlenderBoundingBoxMeshesStack } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BlenderBoundingBoxMeshesStack.isStack(x: any)
 ```
@@ -1109,16 +1109,16 @@ Return whether the given object is a Stack.
 
 We do attribute detection since we can't reliably use 'instanceof'.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isStack.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.isStack.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `of` <a name="of" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.of"></a>
+##### `of` <a name="of" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.of"></a>
 
 ```typescript
-import { BlenderBoundingBoxMeshesStack } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BlenderBoundingBoxMeshesStack } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BlenderBoundingBoxMeshesStack.of(construct: IConstruct)
 ```
@@ -1127,7 +1127,7 @@ Looks up the first stack scope in which `construct` is defined.
 
 Fails if there is no stack up the tree.
 
-###### `construct`<sup>Required</sup> <a name="construct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.of.parameter.construct"></a>
+###### `construct`<sup>Required</sup> <a name="construct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.of.parameter.construct"></a>
 
 - *Type:* constructs.IConstruct
 
@@ -1139,31 +1139,31 @@ The construct to start the search from.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -1175,7 +1175,7 @@ The tree node.
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.account"></a>
+##### `account`<sup>Required</sup> <a name="account" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.account"></a>
 
 ```typescript
 public readonly account: string;
@@ -1204,7 +1204,7 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `artifactId`<sup>Required</sup> <a name="artifactId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.artifactId"></a>
+##### `artifactId`<sup>Required</sup> <a name="artifactId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.artifactId"></a>
 
 ```typescript
 public readonly artifactId: string;
@@ -1216,7 +1216,7 @@ The ID of the cloud assembly artifact for this stack.
 
 ---
 
-##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.availabilityZones"></a>
+##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.availabilityZones"></a>
 
 ```typescript
 public readonly availabilityZones: string[];
@@ -1239,7 +1239,7 @@ To specify a different strategy for selecting availability zones override this m
 
 ---
 
-##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.bundlingRequired"></a>
+##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.bundlingRequired"></a>
 
 ```typescript
 public readonly bundlingRequired: boolean;
@@ -1251,7 +1251,7 @@ Indicates whether the stack requires bundling or not.
 
 ---
 
-##### `dependencies`<sup>Required</sup> <a name="dependencies" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.dependencies"></a>
+##### `dependencies`<sup>Required</sup> <a name="dependencies" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.dependencies"></a>
 
 ```typescript
 public readonly dependencies: Stack[];
@@ -1263,7 +1263,7 @@ Return the stacks this stack depends on.
 
 ---
 
-##### `environment`<sup>Required</sup> <a name="environment" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.environment"></a>
+##### `environment`<sup>Required</sup> <a name="environment" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.environment"></a>
 
 ```typescript
 public readonly environment: string;
@@ -1287,7 +1287,7 @@ region/account-agnostic.
 
 ---
 
-##### `nested`<sup>Required</sup> <a name="nested" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nested"></a>
+##### `nested`<sup>Required</sup> <a name="nested" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nested"></a>
 
 ```typescript
 public readonly nested: boolean;
@@ -1299,7 +1299,7 @@ Indicates if this is a nested stack, in which case `parentStack` will include a 
 
 ---
 
-##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.notificationArns"></a>
+##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.notificationArns"></a>
 
 ```typescript
 public readonly notificationArns: string[];
@@ -1311,7 +1311,7 @@ Returns the list of notification Amazon Resource Names (ARNs) for the current st
 
 ---
 
-##### `partition`<sup>Required</sup> <a name="partition" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.partition"></a>
+##### `partition`<sup>Required</sup> <a name="partition" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.partition"></a>
 
 ```typescript
 public readonly partition: string;
@@ -1323,7 +1323,7 @@ The partition in which this stack is defined.
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1352,7 +1352,7 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `stackId`<sup>Required</sup> <a name="stackId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.stackId"></a>
+##### `stackId`<sup>Required</sup> <a name="stackId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.stackId"></a>
 
 ```typescript
 public readonly stackId: string;
@@ -1372,7 +1372,7 @@ The ID of the stack.
 ```
 
 
-##### `stackName`<sup>Required</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.stackName"></a>
+##### `stackName`<sup>Required</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -1393,7 +1393,7 @@ you can use `Aws.STACK_NAME` directly.
 
 ---
 
-##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.synthesizer"></a>
+##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -1405,7 +1405,7 @@ Synthesis method for this stack.
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.tags"></a>
 
 ```typescript
 public readonly tags: TagManager;
@@ -1417,7 +1417,7 @@ Tags to be applied to the stack.
 
 ---
 
-##### `templateFile`<sup>Required</sup> <a name="templateFile" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.templateFile"></a>
+##### `templateFile`<sup>Required</sup> <a name="templateFile" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.templateFile"></a>
 
 ```typescript
 public readonly templateFile: string;
@@ -1431,7 +1431,7 @@ Example value: `MyStack.template.json`
 
 ---
 
-##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.templateOptions"></a>
+##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.templateOptions"></a>
 
 ```typescript
 public readonly templateOptions: ITemplateOptions;
@@ -1443,7 +1443,7 @@ Options for CloudFormation template (like version, transform, description).
 
 ---
 
-##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.urlSuffix"></a>
+##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.urlSuffix"></a>
 
 ```typescript
 public readonly urlSuffix: string;
@@ -1455,7 +1455,7 @@ The Amazon domain suffix for the region in which this stack is defined.
 
 ---
 
-##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nestedStackParent"></a>
+##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nestedStackParent"></a>
 
 ```typescript
 public readonly nestedStackParent: Stack;
@@ -1467,7 +1467,7 @@ If this is a nested stack, returns it's parent stack.
 
 ---
 
-##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nestedStackResource"></a>
+##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.nestedStackResource"></a>
 
 ```typescript
 public readonly nestedStackResource: CfnResource;
@@ -1481,7 +1481,7 @@ If this is a nested stack, this represents its `AWS::CloudFormation::Stack` reso
 
 ---
 
-##### `terminationProtection`<sup>Required</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Required</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -1494,37 +1494,37 @@ Whether termination protection is enabled for this stack.
 ---
 
 
-### BlenderJoinMeshesStack <a name="BlenderJoinMeshesStack" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack"></a>
+### BlenderJoinMeshesStack <a name="BlenderJoinMeshesStack" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack"></a>
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer"></a>
 
 ```typescript
-import { BlenderJoinMeshesStack } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BlenderJoinMeshesStack } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new BlenderJoinMeshesStack(scope: Construct, id: string, props?: StackProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.StackProps</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.StackProps</code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Optional</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.props"></a>
+##### `props`<sup>Optional</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.Initializer.parameter.props"></a>
 
 - *Type:* aws-cdk-lib.StackProps
 
@@ -1534,25 +1534,25 @@ new BlenderJoinMeshesStack(scope: Construct, id: string, props?: StackProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata">addMetadata</a></code> | Adds an arbitary key-value pair, with information you want to record about the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.formatArn">formatArn</a></code> | Creates an ARN from components. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata">addMetadata</a></code> | Adds an arbitary key-value pair, with information you want to record about the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.formatArn">formatArn</a></code> | Creates an ARN from components. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1560,7 +1560,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addDependency` <a name="addDependency" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency"></a>
+##### `addDependency` <a name="addDependency" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency"></a>
 
 ```typescript
 public addDependency(target: Stack, reason?: string): void
@@ -1571,19 +1571,19 @@ Add a dependency between this stack and another stack.
 This can be used to define dependencies between any two stacks within an
 app, and also supports nested stacks.
 
-###### `target`<sup>Required</sup> <a name="target" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency.parameter.target"></a>
+###### `target`<sup>Required</sup> <a name="target" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency.parameter.target"></a>
 
 - *Type:* aws-cdk-lib.Stack
 
 ---
 
-###### `reason`<sup>Optional</sup> <a name="reason" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency.parameter.reason"></a>
+###### `reason`<sup>Optional</sup> <a name="reason" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency.parameter.reason"></a>
 
 - *Type:* string
 
 ---
 
-##### `addMetadata` <a name="addMetadata" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata"></a>
+##### `addMetadata` <a name="addMetadata" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata"></a>
 
 ```typescript
 public addMetadata(key: string, value: any): void
@@ -1595,19 +1595,19 @@ These get translated to the Metadata section of the generated template.
 
 > [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html)
 
-###### `key`<sup>Required</sup> <a name="key" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata.parameter.key"></a>
+###### `key`<sup>Required</sup> <a name="key" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata.parameter.key"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `addTransform` <a name="addTransform" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addTransform"></a>
+##### `addTransform` <a name="addTransform" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addTransform"></a>
 
 ```typescript
 public addTransform(transform: string): void
@@ -1628,7 +1628,7 @@ stack.addTransform('AWS::Serverless-2016-10-31')
 ```
 
 
-###### `transform`<sup>Required</sup> <a name="transform" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addTransform.parameter.transform"></a>
+###### `transform`<sup>Required</sup> <a name="transform" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addTransform.parameter.transform"></a>
 
 - *Type:* string
 
@@ -1636,7 +1636,7 @@ The transform to add.
 
 ---
 
-##### `exportStringListValue` <a name="exportStringListValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue"></a>
+##### `exportStringListValue` <a name="exportStringListValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue"></a>
 
 ```typescript
 public exportStringListValue(exportedValue: any, options?: ExportValueOptions): string[]
@@ -1662,19 +1662,19 @@ the resource and the manual export.
 
 See `exportValue` for an example of this process.
 
-###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue.parameter.exportedValue"></a>
+###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue.parameter.exportedValue"></a>
 
 - *Type:* any
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.ExportValueOptions
 
 ---
 
-##### `exportValue` <a name="exportValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue"></a>
+##### `exportValue` <a name="exportValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue"></a>
 
 ```typescript
 public exportValue(exportedValue: any, options?: ExportValueOptions): string
@@ -1723,19 +1723,19 @@ Instead, the process takes two deployments:
 - Don't forget to remove the `exportValue()` call as well.
 - Deploy again (this time only the `producerStack` will be changed -- the bucket will be deleted).
 
-###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue.parameter.exportedValue"></a>
+###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue.parameter.exportedValue"></a>
 
 - *Type:* any
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.ExportValueOptions
 
 ---
 
-##### `formatArn` <a name="formatArn" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.formatArn"></a>
+##### `formatArn` <a name="formatArn" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.formatArn"></a>
 
 ```typescript
 public formatArn(components: ArnComponents): string
@@ -1757,13 +1757,13 @@ The required ARN pieces that are omitted will be taken from the stack that
 the 'scope' is attached to. If all ARN pieces are supplied, the supplied scope
 can be 'undefined'.
 
-###### `components`<sup>Required</sup> <a name="components" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.formatArn.parameter.components"></a>
+###### `components`<sup>Required</sup> <a name="components" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.formatArn.parameter.components"></a>
 
 - *Type:* aws-cdk-lib.ArnComponents
 
 ---
 
-##### `getLogicalId` <a name="getLogicalId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.getLogicalId"></a>
+##### `getLogicalId` <a name="getLogicalId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.getLogicalId"></a>
 
 ```typescript
 public getLogicalId(element: CfnElement): string
@@ -1779,7 +1779,7 @@ This method uses the protected method `allocateLogicalId` to render the
 logical ID for an element. To modify the naming scheme, extend the `Stack`
 class and override this method.
 
-###### `element`<sup>Required</sup> <a name="element" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.getLogicalId.parameter.element"></a>
+###### `element`<sup>Required</sup> <a name="element" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.getLogicalId.parameter.element"></a>
 
 - *Type:* aws-cdk-lib.CfnElement
 
@@ -1787,7 +1787,7 @@ The CloudFormation element for which a logical identity is needed.
 
 ---
 
-##### `regionalFact` <a name="regionalFact" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.regionalFact"></a>
+##### `regionalFact` <a name="regionalFact" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.regionalFact"></a>
 
 ```typescript
 public regionalFact(factName: string, defaultValue?: string): string
@@ -1811,19 +1811,19 @@ not have to worry about regional facts.
 If `defaultValue` is not given, it is an error if the fact is unknown for
 the given region.
 
-###### `factName`<sup>Required</sup> <a name="factName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.regionalFact.parameter.factName"></a>
+###### `factName`<sup>Required</sup> <a name="factName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.regionalFact.parameter.factName"></a>
 
 - *Type:* string
 
 ---
 
-###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.regionalFact.parameter.defaultValue"></a>
+###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.regionalFact.parameter.defaultValue"></a>
 
 - *Type:* string
 
 ---
 
-##### `renameLogicalId` <a name="renameLogicalId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.renameLogicalId"></a>
+##### `renameLogicalId` <a name="renameLogicalId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.renameLogicalId"></a>
 
 ```typescript
 public renameLogicalId(oldId: string, newId: string): void
@@ -1834,19 +1834,19 @@ Rename a generated logical identities.
 To modify the naming scheme strategy, extend the `Stack` class and
 override the `allocateLogicalId` method.
 
-###### `oldId`<sup>Required</sup> <a name="oldId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.renameLogicalId.parameter.oldId"></a>
+###### `oldId`<sup>Required</sup> <a name="oldId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.renameLogicalId.parameter.oldId"></a>
 
 - *Type:* string
 
 ---
 
-###### `newId`<sup>Required</sup> <a name="newId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.renameLogicalId.parameter.newId"></a>
+###### `newId`<sup>Required</sup> <a name="newId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.renameLogicalId.parameter.newId"></a>
 
 - *Type:* string
 
 ---
 
-##### `reportMissingContextKey` <a name="reportMissingContextKey" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.reportMissingContextKey"></a>
+##### `reportMissingContextKey` <a name="reportMissingContextKey" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.reportMissingContextKey"></a>
 
 ```typescript
 public reportMissingContextKey(report: MissingContext): void
@@ -1857,7 +1857,7 @@ Indicate that a context key was expected.
 Contains instructions which will be emitted into the cloud assembly on how
 the key should be supplied.
 
-###### `report`<sup>Required</sup> <a name="report" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.reportMissingContextKey.parameter.report"></a>
+###### `report`<sup>Required</sup> <a name="report" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.reportMissingContextKey.parameter.report"></a>
 
 - *Type:* aws-cdk-lib.cloud_assembly_schema.MissingContext
 
@@ -1865,7 +1865,7 @@ The set of parameters needed to obtain the context.
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.resolve"></a>
+##### `resolve` <a name="resolve" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.resolve"></a>
 
 ```typescript
 public resolve(obj: any): any
@@ -1873,13 +1873,13 @@ public resolve(obj: any): any
 
 Resolve a tokenized value in the context of the current stack.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.resolve.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.resolve.parameter.obj"></a>
 
 - *Type:* any
 
 ---
 
-##### `splitArn` <a name="splitArn" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.splitArn"></a>
+##### `splitArn` <a name="splitArn" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.splitArn"></a>
 
 ```typescript
 public splitArn(arn: string, arnFormat: ArnFormat): ArnComponents
@@ -1892,7 +1892,7 @@ and a Token representing a dynamic CloudFormation expression
 (in which case the returned components will also be dynamic CloudFormation expressions,
 encoded as Tokens).
 
-###### `arn`<sup>Required</sup> <a name="arn" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.splitArn.parameter.arn"></a>
+###### `arn`<sup>Required</sup> <a name="arn" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.splitArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -1900,7 +1900,7 @@ the ARN to split into its components.
 
 ---
 
-###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.splitArn.parameter.arnFormat"></a>
+###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.splitArn.parameter.arnFormat"></a>
 
 - *Type:* aws-cdk-lib.ArnFormat
 
@@ -1908,7 +1908,7 @@ the expected format of 'arn' - depends on what format the service 'arn' represen
 
 ---
 
-##### `toJsonString` <a name="toJsonString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toJsonString"></a>
+##### `toJsonString` <a name="toJsonString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toJsonString"></a>
 
 ```typescript
 public toJsonString(obj: any, space?: number): string
@@ -1916,19 +1916,19 @@ public toJsonString(obj: any, space?: number): string
 
 Convert an object, potentially containing tokens, to a JSON string.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toJsonString.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toJsonString.parameter.obj"></a>
 
 - *Type:* any
 
 ---
 
-###### `space`<sup>Optional</sup> <a name="space" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toJsonString.parameter.space"></a>
+###### `space`<sup>Optional</sup> <a name="space" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toJsonString.parameter.space"></a>
 
 - *Type:* number
 
 ---
 
-##### `toYamlString` <a name="toYamlString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toYamlString"></a>
+##### `toYamlString` <a name="toYamlString" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toYamlString"></a>
 
 ```typescript
 public toYamlString(obj: any): string
@@ -1936,7 +1936,7 @@ public toYamlString(obj: any): string
 
 Convert an object, potentially containing tokens, to a YAML string.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toYamlString.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toYamlString.parameter.obj"></a>
 
 - *Type:* any
 
@@ -1946,16 +1946,16 @@ Convert an object, potentially containing tokens, to a YAML string.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isConstruct"></a>
 
 ```typescript
-import { BlenderJoinMeshesStack } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BlenderJoinMeshesStack } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BlenderJoinMeshesStack.isConstruct(x: any)
 ```
@@ -1976,7 +1976,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -1984,10 +1984,10 @@ Any object.
 
 ---
 
-##### `isStack` <a name="isStack" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isStack"></a>
+##### `isStack` <a name="isStack" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isStack"></a>
 
 ```typescript
-import { BlenderJoinMeshesStack } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BlenderJoinMeshesStack } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BlenderJoinMeshesStack.isStack(x: any)
 ```
@@ -1996,16 +1996,16 @@ Return whether the given object is a Stack.
 
 We do attribute detection since we can't reliably use 'instanceof'.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isStack.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.isStack.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `of` <a name="of" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.of"></a>
+##### `of` <a name="of" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.of"></a>
 
 ```typescript
-import { BlenderJoinMeshesStack } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BlenderJoinMeshesStack } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 BlenderJoinMeshesStack.of(construct: IConstruct)
 ```
@@ -2014,7 +2014,7 @@ Looks up the first stack scope in which `construct` is defined.
 
 Fails if there is no stack up the tree.
 
-###### `construct`<sup>Required</sup> <a name="construct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.of.parameter.construct"></a>
+###### `construct`<sup>Required</sup> <a name="construct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.of.parameter.construct"></a>
 
 - *Type:* constructs.IConstruct
 
@@ -2026,31 +2026,31 @@ The construct to start the search from.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -2062,7 +2062,7 @@ The tree node.
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.account"></a>
+##### `account`<sup>Required</sup> <a name="account" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.account"></a>
 
 ```typescript
 public readonly account: string;
@@ -2091,7 +2091,7 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `artifactId`<sup>Required</sup> <a name="artifactId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.artifactId"></a>
+##### `artifactId`<sup>Required</sup> <a name="artifactId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.artifactId"></a>
 
 ```typescript
 public readonly artifactId: string;
@@ -2103,7 +2103,7 @@ The ID of the cloud assembly artifact for this stack.
 
 ---
 
-##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.availabilityZones"></a>
+##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.availabilityZones"></a>
 
 ```typescript
 public readonly availabilityZones: string[];
@@ -2126,7 +2126,7 @@ To specify a different strategy for selecting availability zones override this m
 
 ---
 
-##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.bundlingRequired"></a>
+##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.bundlingRequired"></a>
 
 ```typescript
 public readonly bundlingRequired: boolean;
@@ -2138,7 +2138,7 @@ Indicates whether the stack requires bundling or not.
 
 ---
 
-##### `dependencies`<sup>Required</sup> <a name="dependencies" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.dependencies"></a>
+##### `dependencies`<sup>Required</sup> <a name="dependencies" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.dependencies"></a>
 
 ```typescript
 public readonly dependencies: Stack[];
@@ -2150,7 +2150,7 @@ Return the stacks this stack depends on.
 
 ---
 
-##### `environment`<sup>Required</sup> <a name="environment" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.environment"></a>
+##### `environment`<sup>Required</sup> <a name="environment" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.environment"></a>
 
 ```typescript
 public readonly environment: string;
@@ -2174,7 +2174,7 @@ region/account-agnostic.
 
 ---
 
-##### `nested`<sup>Required</sup> <a name="nested" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nested"></a>
+##### `nested`<sup>Required</sup> <a name="nested" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nested"></a>
 
 ```typescript
 public readonly nested: boolean;
@@ -2186,7 +2186,7 @@ Indicates if this is a nested stack, in which case `parentStack` will include a 
 
 ---
 
-##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.notificationArns"></a>
+##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.notificationArns"></a>
 
 ```typescript
 public readonly notificationArns: string[];
@@ -2198,7 +2198,7 @@ Returns the list of notification Amazon Resource Names (ARNs) for the current st
 
 ---
 
-##### `partition`<sup>Required</sup> <a name="partition" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.partition"></a>
+##### `partition`<sup>Required</sup> <a name="partition" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.partition"></a>
 
 ```typescript
 public readonly partition: string;
@@ -2210,7 +2210,7 @@ The partition in which this stack is defined.
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -2239,7 +2239,7 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `stackId`<sup>Required</sup> <a name="stackId" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.stackId"></a>
+##### `stackId`<sup>Required</sup> <a name="stackId" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.stackId"></a>
 
 ```typescript
 public readonly stackId: string;
@@ -2259,7 +2259,7 @@ The ID of the stack.
 ```
 
 
-##### `stackName`<sup>Required</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.stackName"></a>
+##### `stackName`<sup>Required</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -2280,7 +2280,7 @@ you can use `Aws.STACK_NAME` directly.
 
 ---
 
-##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.synthesizer"></a>
+##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -2292,7 +2292,7 @@ Synthesis method for this stack.
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.tags"></a>
 
 ```typescript
 public readonly tags: TagManager;
@@ -2304,7 +2304,7 @@ Tags to be applied to the stack.
 
 ---
 
-##### `templateFile`<sup>Required</sup> <a name="templateFile" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.templateFile"></a>
+##### `templateFile`<sup>Required</sup> <a name="templateFile" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.templateFile"></a>
 
 ```typescript
 public readonly templateFile: string;
@@ -2318,7 +2318,7 @@ Example value: `MyStack.template.json`
 
 ---
 
-##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.templateOptions"></a>
+##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.templateOptions"></a>
 
 ```typescript
 public readonly templateOptions: ITemplateOptions;
@@ -2330,7 +2330,7 @@ Options for CloudFormation template (like version, transform, description).
 
 ---
 
-##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.urlSuffix"></a>
+##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.urlSuffix"></a>
 
 ```typescript
 public readonly urlSuffix: string;
@@ -2342,7 +2342,7 @@ The Amazon domain suffix for the region in which this stack is defined.
 
 ---
 
-##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nestedStackParent"></a>
+##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nestedStackParent"></a>
 
 ```typescript
 public readonly nestedStackParent: Stack;
@@ -2354,7 +2354,7 @@ If this is a nested stack, returns it's parent stack.
 
 ---
 
-##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nestedStackResource"></a>
+##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.nestedStackResource"></a>
 
 ```typescript
 public readonly nestedStackResource: CfnResource;
@@ -2368,7 +2368,7 @@ If this is a nested stack, this represents its `AWS::CloudFormation::Stack` reso
 
 ---
 
-##### `terminationProtection`<sup>Required</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Required</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -2381,30 +2381,30 @@ Whether termination protection is enabled for this stack.
 ---
 
 
-### JobSchemasLambdaLayersConstruct <a name="JobSchemasLambdaLayersConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct"></a>
+### JobSchemasLambdaLayersConstruct <a name="JobSchemasLambdaLayersConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct"></a>
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer"></a>
 
 ```typescript
-import { JobSchemasLambdaLayersConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { JobSchemasLambdaLayersConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new JobSchemasLambdaLayersConstruct(parent: Construct, name: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `parent`<sup>Required</sup> <a name="parent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer.parameter.parent"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer.parameter.parent"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.Initializer.parameter.name"></a>
 
 - *Type:* string
 
@@ -2414,11 +2414,11 @@ new JobSchemasLambdaLayersConstruct(parent: Construct, name: string)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2430,14 +2430,14 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.isConstruct"></a>
 
 ```typescript
-import { JobSchemasLambdaLayersConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { JobSchemasLambdaLayersConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 JobSchemasLambdaLayersConstruct.isConstruct(x: any)
 ```
@@ -2458,7 +2458,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -2470,13 +2470,13 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.inputOutputPrefix">inputOutputPrefix</a></code> | <code>@aws-cdk/aws-lambda-python-alpha.PythonLayerVersion</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.inputSingleFileOutputPrefix">inputSingleFileOutputPrefix</a></code> | <code>@aws-cdk/aws-lambda-python-alpha.PythonLayerVersion</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.inputOutputPrefix">inputOutputPrefix</a></code> | <code>@aws-cdk/aws-lambda-python-alpha.PythonLayerVersion</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.inputSingleFileOutputPrefix">inputSingleFileOutputPrefix</a></code> | <code>@aws-cdk/aws-lambda-python-alpha.PythonLayerVersion</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -2488,7 +2488,7 @@ The tree node.
 
 ---
 
-##### `inputOutputPrefix`<sup>Required</sup> <a name="inputOutputPrefix" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.inputOutputPrefix"></a>
+##### `inputOutputPrefix`<sup>Required</sup> <a name="inputOutputPrefix" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.inputOutputPrefix"></a>
 
 ```typescript
 public readonly inputOutputPrefix: PythonLayerVersion;
@@ -2498,7 +2498,7 @@ public readonly inputOutputPrefix: PythonLayerVersion;
 
 ---
 
-##### `inputSingleFileOutputPrefix`<sup>Required</sup> <a name="inputSingleFileOutputPrefix" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.inputSingleFileOutputPrefix"></a>
+##### `inputSingleFileOutputPrefix`<sup>Required</sup> <a name="inputSingleFileOutputPrefix" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchemasLambdaLayersConstruct.property.inputSingleFileOutputPrefix"></a>
 
 ```typescript
 public readonly inputSingleFileOutputPrefix: PythonLayerVersion;
@@ -2509,41 +2509,41 @@ public readonly inputSingleFileOutputPrefix: PythonLayerVersion;
 ---
 
 
-### LambdaInvokeSfnChainConstruct <a name="LambdaInvokeSfnChainConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct"></a>
+### LambdaInvokeSfnChainConstruct <a name="LambdaInvokeSfnChainConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct"></a>
 
 A construct to create a Step Function Chain to invoke a Lambda function.
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer"></a>
 
 ```typescript
-import { LambdaInvokeSfnChainConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { LambdaInvokeSfnChainConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new LambdaInvokeSfnChainConstruct(parent: Construct, name: string, props: LambdaInvokeSfnChainConstructProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps">LambdaInvokeSfnChainConstructProps</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps">LambdaInvokeSfnChainConstructProps</a></code> | *No description.* |
 
 ---
 
-##### `parent`<sup>Required</sup> <a name="parent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.parent"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.parent"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.name"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps">LambdaInvokeSfnChainConstructProps</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps">LambdaInvokeSfnChainConstructProps</a>
 
 ---
 
@@ -2551,11 +2551,11 @@ new LambdaInvokeSfnChainConstruct(parent: Construct, name: string, props: Lambda
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2567,14 +2567,14 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.isConstruct"></a>
 
 ```typescript
-import { LambdaInvokeSfnChainConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { LambdaInvokeSfnChainConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 LambdaInvokeSfnChainConstruct.isConstruct(x: any)
 ```
@@ -2595,7 +2595,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -2607,13 +2607,13 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.sfnChain">sfnChain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | The Step Function Chain. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.sfnDefinitionBody">sfnDefinitionBody</a></code> | <code>aws-cdk-lib.aws_stepfunctions.DefinitionBody</code> | The Step Function Definition Body. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.sfnChain">sfnChain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | The Step Function Chain. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.sfnDefinitionBody">sfnDefinitionBody</a></code> | <code>aws-cdk-lib.aws_stepfunctions.DefinitionBody</code> | The Step Function Definition Body. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -2625,7 +2625,7 @@ The tree node.
 
 ---
 
-##### `sfnChain`<sup>Required</sup> <a name="sfnChain" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.sfnChain"></a>
+##### `sfnChain`<sup>Required</sup> <a name="sfnChain" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.sfnChain"></a>
 
 ```typescript
 public readonly sfnChain: Chain;
@@ -2637,7 +2637,7 @@ The Step Function Chain.
 
 ---
 
-##### `sfnDefinitionBody`<sup>Required</sup> <a name="sfnDefinitionBody" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.sfnDefinitionBody"></a>
+##### `sfnDefinitionBody`<sup>Required</sup> <a name="sfnDefinitionBody" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstruct.property.sfnDefinitionBody"></a>
 
 ```typescript
 public readonly sfnDefinitionBody: DefinitionBody;
@@ -2650,41 +2650,41 @@ The Step Function Definition Body.
 ---
 
 
-### StateMachineWithLogGroupFromChainConstruct <a name="StateMachineWithLogGroupFromChainConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct"></a>
+### StateMachineWithLogGroupFromChainConstruct <a name="StateMachineWithLogGroupFromChainConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct"></a>
 
 This construct creates a state machine and a corresponding log group.
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer"></a>
 
 ```typescript
-import { StateMachineWithLogGroupFromChainConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { StateMachineWithLogGroupFromChainConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new StateMachineWithLogGroupFromChainConstruct(parent: Construct, name: string, props: StateMachineWithLogGroupFromChainConstructProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps">StateMachineWithLogGroupFromChainConstructProps</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps">StateMachineWithLogGroupFromChainConstructProps</a></code> | *No description.* |
 
 ---
 
-##### `parent`<sup>Required</sup> <a name="parent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.parent"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.parent"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.name"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps">StateMachineWithLogGroupFromChainConstructProps</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps">StateMachineWithLogGroupFromChainConstructProps</a>
 
 ---
 
@@ -2692,11 +2692,11 @@ new StateMachineWithLogGroupFromChainConstruct(parent: Construct, name: string, 
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2708,14 +2708,14 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.isConstruct"></a>
 
 ```typescript
-import { StateMachineWithLogGroupFromChainConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { StateMachineWithLogGroupFromChainConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 StateMachineWithLogGroupFromChainConstruct.isConstruct(x: any)
 ```
@@ -2736,7 +2736,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -2748,13 +2748,13 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | The State Machine. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.stateMachineLogGroup">stateMachineLogGroup</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | The State Machine Log Group. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | The State Machine. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.stateMachineLogGroup">stateMachineLogGroup</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | The State Machine Log Group. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -2766,7 +2766,7 @@ The tree node.
 
 ---
 
-##### `stateMachine`<sup>Required</sup> <a name="stateMachine" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.stateMachine"></a>
+##### `stateMachine`<sup>Required</sup> <a name="stateMachine" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.stateMachine"></a>
 
 ```typescript
 public readonly stateMachine: StateMachine;
@@ -2778,7 +2778,7 @@ The State Machine.
 
 ---
 
-##### `stateMachineLogGroup`<sup>Required</sup> <a name="stateMachineLogGroup" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.stateMachineLogGroup"></a>
+##### `stateMachineLogGroup`<sup>Required</sup> <a name="stateMachineLogGroup" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstruct.property.stateMachineLogGroup"></a>
 
 ```typescript
 public readonly stateMachineLogGroup: LogGroup;
@@ -2791,41 +2791,41 @@ The State Machine Log Group.
 ---
 
 
-### VpcBatchFargateConstruct <a name="VpcBatchFargateConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct"></a>
+### VpcBatchFargateConstruct <a name="VpcBatchFargateConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct"></a>
 
 This construct creates a VPC with a private subnet and a security group.
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer"></a>
 
 ```typescript
-import { VpcBatchFargateConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { VpcBatchFargateConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new VpcBatchFargateConstruct(parent: Construct, name: string, props: VpcBatchFargateConstructProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps">VpcBatchFargateConstructProps</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.parent">parent</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps">VpcBatchFargateConstructProps</a></code> | *No description.* |
 
 ---
 
-##### `parent`<sup>Required</sup> <a name="parent" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.parent"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.parent"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.name"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps">VpcBatchFargateConstructProps</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps">VpcBatchFargateConstructProps</a>
 
 ---
 
@@ -2833,11 +2833,11 @@ new VpcBatchFargateConstruct(parent: Construct, name: string, props: VpcBatchFar
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.toString"></a>
+##### `toString` <a name="toString" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2849,14 +2849,14 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.isConstruct"></a>
 
 ```typescript
-import { VpcBatchFargateConstruct } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { VpcBatchFargateConstruct } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 VpcBatchFargateConstruct.isConstruct(x: any)
 ```
@@ -2877,7 +2877,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -2889,14 +2889,14 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.securityGroups">securityGroups</a></code> | <code>aws-cdk-lib.aws_ec2.SecurityGroup[]</code> | The VPC security groups. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.subnets">subnets</a></code> | <code>aws-cdk-lib.aws_ec2.ISubnet[]</code> | The VPC subnets. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.vpc">vpc</a></code> | <code>aws-cdk-lib.aws_ec2.Vpc</code> | The VPC. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.securityGroups">securityGroups</a></code> | <code>aws-cdk-lib.aws_ec2.SecurityGroup[]</code> | The VPC security groups. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.subnets">subnets</a></code> | <code>aws-cdk-lib.aws_ec2.ISubnet[]</code> | The VPC subnets. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.vpc">vpc</a></code> | <code>aws-cdk-lib.aws_ec2.Vpc</code> | The VPC. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -2908,7 +2908,7 @@ The tree node.
 
 ---
 
-##### `securityGroups`<sup>Required</sup> <a name="securityGroups" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.securityGroups"></a>
+##### `securityGroups`<sup>Required</sup> <a name="securityGroups" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.securityGroups"></a>
 
 ```typescript
 public readonly securityGroups: SecurityGroup[];
@@ -2920,7 +2920,7 @@ The VPC security groups.
 
 ---
 
-##### `subnets`<sup>Required</sup> <a name="subnets" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.subnets"></a>
+##### `subnets`<sup>Required</sup> <a name="subnets" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.subnets"></a>
 
 ```typescript
 public readonly subnets: ISubnet[];
@@ -2932,7 +2932,7 @@ The VPC subnets.
 
 ---
 
-##### `vpc`<sup>Required</sup> <a name="vpc" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.vpc"></a>
+##### `vpc`<sup>Required</sup> <a name="vpc" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstruct.property.vpc"></a>
 
 ```typescript
 public readonly vpc: Vpc;
@@ -2947,14 +2947,14 @@ The VPC.
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### BatchFargateConstructProps <a name="BatchFargateConstructProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps"></a>
+### BatchFargateConstructProps <a name="BatchFargateConstructProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps"></a>
 
 Properties for the BatchFargateConstruct.
 
-#### Initializer <a name="Initializer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.Initializer"></a>
 
 ```typescript
-import { BatchFargateConstructProps } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateConstructProps } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 const batchFargateConstructProps: BatchFargateConstructProps = { ... }
 ```
@@ -2963,23 +2963,23 @@ const batchFargateConstructProps: BatchFargateConstructProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.securityGroups">securityGroups</a></code> | <code>aws-cdk-lib.aws_ec2.SecurityGroup[]</code> | The security groups to use. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.subnets">subnets</a></code> | <code>aws-cdk-lib.aws_ec2.ISubnet[]</code> | The subnets to use. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.vpc">vpc</a></code> | <code>aws-cdk-lib.aws_ec2.Vpc</code> | The VPC to use. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.securityGroups">securityGroups</a></code> | <code>aws-cdk-lib.aws_ec2.SecurityGroup[]</code> | The security groups to use. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.subnets">subnets</a></code> | <code>aws-cdk-lib.aws_ec2.ISubnet[]</code> | The subnets to use. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.vpc">vpc</a></code> | <code>aws-cdk-lib.aws_ec2.Vpc</code> | The VPC to use. |
 
 ---
 
-##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.analyticsReporting"></a>
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.analyticsReporting"></a>
 
 ```typescript
 public readonly analyticsReporting: boolean;
@@ -2992,7 +2992,7 @@ Include runtime versioning information in this Stack.
 
 ---
 
-##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.crossRegionReferences"></a>
+##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.crossRegionReferences"></a>
 
 ```typescript
 public readonly crossRegionReferences: boolean;
@@ -3010,7 +3010,7 @@ This feature is currently experimental
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -3023,7 +3023,7 @@ A description of the stack.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -3097,7 +3097,7 @@ new MyStack(app, 'Stack1');
 ```
 
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: PermissionsBoundary;
@@ -3110,7 +3110,7 @@ Options for applying a permissions boundary to all IAM Roles and Users created w
 
 ---
 
-##### `stackName`<sup>Optional</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.stackName"></a>
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -3123,7 +3123,7 @@ Name to deploy the stack with.
 
 ---
 
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.suppressTemplateIndentation"></a>
+##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.suppressTemplateIndentation"></a>
 
 ```typescript
 public readonly suppressTemplateIndentation: boolean;
@@ -3140,7 +3140,7 @@ default value `false` will be used.
 
 ---
 
-##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.synthesizer"></a>
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -3163,7 +3163,7 @@ other synthesizer is specified.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -3176,7 +3176,7 @@ Stack tags that will be applied to all the taggable resources and the stack itse
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -3189,7 +3189,7 @@ Whether to enable termination protection for this stack.
 
 ---
 
-##### `securityGroups`<sup>Required</sup> <a name="securityGroups" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.securityGroups"></a>
+##### `securityGroups`<sup>Required</sup> <a name="securityGroups" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.securityGroups"></a>
 
 ```typescript
 public readonly securityGroups: SecurityGroup[];
@@ -3201,7 +3201,7 @@ The security groups to use.
 
 ---
 
-##### `subnets`<sup>Required</sup> <a name="subnets" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.subnets"></a>
+##### `subnets`<sup>Required</sup> <a name="subnets" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.subnets"></a>
 
 ```typescript
 public readonly subnets: ISubnet[];
@@ -3213,7 +3213,7 @@ The subnets to use.
 
 ---
 
-##### `vpc`<sup>Required</sup> <a name="vpc" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.vpc"></a>
+##### `vpc`<sup>Required</sup> <a name="vpc" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.vpc"></a>
 
 ```typescript
 public readonly vpc: Vpc;
@@ -3225,14 +3225,14 @@ The VPC to use.
 
 ---
 
-### BatchFargateParallelPipelineConstructProps <a name="BatchFargateParallelPipelineConstructProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps"></a>
+### BatchFargateParallelPipelineConstructProps <a name="BatchFargateParallelPipelineConstructProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps"></a>
 
 Properties for the BatchFargateParallelPipelineConstruct.
 
-#### Initializer <a name="Initializer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.Initializer"></a>
 
 ```typescript
-import { BatchFargateParallelPipelineConstructProps } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateParallelPipelineConstructProps } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 const batchFargateParallelPipelineConstructProps: BatchFargateParallelPipelineConstructProps = { ... }
 ```
@@ -3241,24 +3241,24 @@ const batchFargateParallelPipelineConstructProps: BatchFargateParallelPipelineCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.batchFargateSubmitJobSfnChainConstructProps">batchFargateSubmitJobSfnChainConstructProps</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a></code> | The BatchFargateSubmitJobSfnChainConstructProps for the pipeline step. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.createStateMachine">createStateMachine</a></code> | <code>boolean</code> | Should the construct create a Step Function State Machine or just the Step Function Chain. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.pipelineName">pipelineName</a></code> | <code>string</code> | The name of the pipeline. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stateMachineTimeout">stateMachineTimeout</a></code> | <code>aws-cdk-lib.Duration</code> | The timeout for the state machine (if created). |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.batchFargateSubmitJobSfnChainConstructProps">batchFargateSubmitJobSfnChainConstructProps</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a></code> | The BatchFargateSubmitJobSfnChainConstructProps for the pipeline step. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.createStateMachine">createStateMachine</a></code> | <code>boolean</code> | Should the construct create a Step Function State Machine or just the Step Function Chain. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.pipelineName">pipelineName</a></code> | <code>string</code> | The name of the pipeline. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stateMachineTimeout">stateMachineTimeout</a></code> | <code>aws-cdk-lib.Duration</code> | The timeout for the state machine (if created). |
 
 ---
 
-##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.analyticsReporting"></a>
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.analyticsReporting"></a>
 
 ```typescript
 public readonly analyticsReporting: boolean;
@@ -3271,7 +3271,7 @@ Include runtime versioning information in this Stack.
 
 ---
 
-##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.crossRegionReferences"></a>
+##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.crossRegionReferences"></a>
 
 ```typescript
 public readonly crossRegionReferences: boolean;
@@ -3289,7 +3289,7 @@ This feature is currently experimental
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -3302,7 +3302,7 @@ A description of the stack.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -3376,7 +3376,7 @@ new MyStack(app, 'Stack1');
 ```
 
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: PermissionsBoundary;
@@ -3389,7 +3389,7 @@ Options for applying a permissions boundary to all IAM Roles and Users created w
 
 ---
 
-##### `stackName`<sup>Optional</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stackName"></a>
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -3402,7 +3402,7 @@ Name to deploy the stack with.
 
 ---
 
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.suppressTemplateIndentation"></a>
+##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.suppressTemplateIndentation"></a>
 
 ```typescript
 public readonly suppressTemplateIndentation: boolean;
@@ -3419,7 +3419,7 @@ default value `false` will be used.
 
 ---
 
-##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.synthesizer"></a>
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -3442,7 +3442,7 @@ other synthesizer is specified.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -3455,7 +3455,7 @@ Stack tags that will be applied to all the taggable resources and the stack itse
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -3468,19 +3468,19 @@ Whether to enable termination protection for this stack.
 
 ---
 
-##### `batchFargateSubmitJobSfnChainConstructProps`<sup>Required</sup> <a name="batchFargateSubmitJobSfnChainConstructProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.batchFargateSubmitJobSfnChainConstructProps"></a>
+##### `batchFargateSubmitJobSfnChainConstructProps`<sup>Required</sup> <a name="batchFargateSubmitJobSfnChainConstructProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.batchFargateSubmitJobSfnChainConstructProps"></a>
 
 ```typescript
 public readonly batchFargateSubmitJobSfnChainConstructProps: BatchFargateSubmitJobSfnChainConstructProps;
 ```
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a>
 
 The BatchFargateSubmitJobSfnChainConstructProps for the pipeline step.
 
 ---
 
-##### `createStateMachine`<sup>Required</sup> <a name="createStateMachine" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.createStateMachine"></a>
+##### `createStateMachine`<sup>Required</sup> <a name="createStateMachine" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.createStateMachine"></a>
 
 ```typescript
 public readonly createStateMachine: boolean;
@@ -3492,7 +3492,7 @@ Should the construct create a Step Function State Machine or just the Step Funct
 
 ---
 
-##### `pipelineName`<sup>Required</sup> <a name="pipelineName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.pipelineName"></a>
+##### `pipelineName`<sup>Required</sup> <a name="pipelineName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.pipelineName"></a>
 
 ```typescript
 public readonly pipelineName: string;
@@ -3504,7 +3504,7 @@ The name of the pipeline.
 
 ---
 
-##### `stateMachineTimeout`<sup>Optional</sup> <a name="stateMachineTimeout" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stateMachineTimeout"></a>
+##### `stateMachineTimeout`<sup>Optional</sup> <a name="stateMachineTimeout" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stateMachineTimeout"></a>
 
 ```typescript
 public readonly stateMachineTimeout: Duration;
@@ -3517,14 +3517,14 @@ The timeout for the state machine (if created).
 
 ---
 
-### BatchFargateSeriesPipelineConstructProps <a name="BatchFargateSeriesPipelineConstructProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps"></a>
+### BatchFargateSeriesPipelineConstructProps <a name="BatchFargateSeriesPipelineConstructProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps"></a>
 
 Properties for the BatchFargateSeriesPipelineConstruct.
 
-#### Initializer <a name="Initializer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.Initializer"></a>
 
 ```typescript
-import { BatchFargateSeriesPipelineConstructProps } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateSeriesPipelineConstructProps } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 const batchFargateSeriesPipelineConstructProps: BatchFargateSeriesPipelineConstructProps = { ... }
 ```
@@ -3533,24 +3533,24 @@ const batchFargateSeriesPipelineConstructProps: BatchFargateSeriesPipelineConstr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.createStateMachine">createStateMachine</a></code> | <code>boolean</code> | Should the construct create a Step Function State Machine or just the Step Function Chain. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.pipelineName">pipelineName</a></code> | <code>string</code> | The name of the pipeline. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.steps">steps</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a>[]</code> | The steps for the pipeline in the form of BatchFargateSubmitJobSfnChainConstructProps. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stateMachineTimeout">stateMachineTimeout</a></code> | <code>aws-cdk-lib.Duration</code> | The timeout for the state machine (if created). |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.createStateMachine">createStateMachine</a></code> | <code>boolean</code> | Should the construct create a Step Function State Machine or just the Step Function Chain. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.pipelineName">pipelineName</a></code> | <code>string</code> | The name of the pipeline. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.steps">steps</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a>[]</code> | The steps for the pipeline in the form of BatchFargateSubmitJobSfnChainConstructProps. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stateMachineTimeout">stateMachineTimeout</a></code> | <code>aws-cdk-lib.Duration</code> | The timeout for the state machine (if created). |
 
 ---
 
-##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.analyticsReporting"></a>
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.analyticsReporting"></a>
 
 ```typescript
 public readonly analyticsReporting: boolean;
@@ -3563,7 +3563,7 @@ Include runtime versioning information in this Stack.
 
 ---
 
-##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.crossRegionReferences"></a>
+##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.crossRegionReferences"></a>
 
 ```typescript
 public readonly crossRegionReferences: boolean;
@@ -3581,7 +3581,7 @@ This feature is currently experimental
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -3594,7 +3594,7 @@ A description of the stack.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -3668,7 +3668,7 @@ new MyStack(app, 'Stack1');
 ```
 
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: PermissionsBoundary;
@@ -3681,7 +3681,7 @@ Options for applying a permissions boundary to all IAM Roles and Users created w
 
 ---
 
-##### `stackName`<sup>Optional</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stackName"></a>
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -3694,7 +3694,7 @@ Name to deploy the stack with.
 
 ---
 
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.suppressTemplateIndentation"></a>
+##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.suppressTemplateIndentation"></a>
 
 ```typescript
 public readonly suppressTemplateIndentation: boolean;
@@ -3711,7 +3711,7 @@ default value `false` will be used.
 
 ---
 
-##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.synthesizer"></a>
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -3734,7 +3734,7 @@ other synthesizer is specified.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -3747,7 +3747,7 @@ Stack tags that will be applied to all the taggable resources and the stack itse
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -3760,7 +3760,7 @@ Whether to enable termination protection for this stack.
 
 ---
 
-##### `createStateMachine`<sup>Required</sup> <a name="createStateMachine" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.createStateMachine"></a>
+##### `createStateMachine`<sup>Required</sup> <a name="createStateMachine" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.createStateMachine"></a>
 
 ```typescript
 public readonly createStateMachine: boolean;
@@ -3772,7 +3772,7 @@ Should the construct create a Step Function State Machine or just the Step Funct
 
 ---
 
-##### `pipelineName`<sup>Required</sup> <a name="pipelineName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.pipelineName"></a>
+##### `pipelineName`<sup>Required</sup> <a name="pipelineName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.pipelineName"></a>
 
 ```typescript
 public readonly pipelineName: string;
@@ -3784,19 +3784,19 @@ The name of the pipeline.
 
 ---
 
-##### `steps`<sup>Required</sup> <a name="steps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.steps"></a>
+##### `steps`<sup>Required</sup> <a name="steps" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.steps"></a>
 
 ```typescript
 public readonly steps: BatchFargateSubmitJobSfnChainConstructProps[];
 ```
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a>[]
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps">BatchFargateSubmitJobSfnChainConstructProps</a>[]
 
 The steps for the pipeline in the form of BatchFargateSubmitJobSfnChainConstructProps.
 
 ---
 
-##### `stateMachineTimeout`<sup>Optional</sup> <a name="stateMachineTimeout" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stateMachineTimeout"></a>
+##### `stateMachineTimeout`<sup>Optional</sup> <a name="stateMachineTimeout" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stateMachineTimeout"></a>
 
 ```typescript
 public readonly stateMachineTimeout: Duration;
@@ -3808,14 +3808,14 @@ The timeout for the state machine (if created).
 
 ---
 
-### BatchFargateSubmitJobSfnChainConstructProps <a name="BatchFargateSubmitJobSfnChainConstructProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps"></a>
+### BatchFargateSubmitJobSfnChainConstructProps <a name="BatchFargateSubmitJobSfnChainConstructProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps"></a>
 
 Properties for the BatchFargateSubmitJobSfnChainConstruct.
 
-#### Initializer <a name="Initializer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.Initializer"></a>
 
 ```typescript
-import { BatchFargateSubmitJobSfnChainConstructProps } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { BatchFargateSubmitJobSfnChainConstructProps } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 const batchFargateSubmitJobSfnChainConstructProps: BatchFargateSubmitJobSfnChainConstructProps = { ... }
 ```
@@ -3824,25 +3824,25 @@ const batchFargateSubmitJobSfnChainConstructProps: BatchFargateSubmitJobSfnChain
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.batchEcsJobDefinition">batchEcsJobDefinition</a></code> | <code>aws-cdk-lib.aws_batch.EcsJobDefinition</code> | The BatchEcsJobDefinition to use. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.batchFargateConstruct">batchFargateConstruct</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct">BatchFargateConstruct</a></code> | The BatchFargateConstruct to use. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.constructJobDefinitionFunction">constructJobDefinitionFunction</a></code> | <code>aws-cdk-lib.aws_lambda.Function</code> | The Lambda function to use for constructing the job definition. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stepConfig">stepConfig</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig">StepConfig</a></code> | The StepConfig to use for the Step Function Chain step. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.bucket">bucket</a></code> | <code>aws-cdk-lib.aws_s3.Bucket</code> | The S3 bucket to use for source files. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.batchEcsJobDefinition">batchEcsJobDefinition</a></code> | <code>aws-cdk-lib.aws_batch.EcsJobDefinition</code> | The BatchEcsJobDefinition to use. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.batchFargateConstruct">batchFargateConstruct</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct">BatchFargateConstruct</a></code> | The BatchFargateConstruct to use. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.constructJobDefinitionFunction">constructJobDefinitionFunction</a></code> | <code>aws-cdk-lib.aws_lambda.Function</code> | The Lambda function to use for constructing the job definition. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stepConfig">stepConfig</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig">StepConfig</a></code> | The StepConfig to use for the Step Function Chain step. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.bucket">bucket</a></code> | <code>aws-cdk-lib.aws_s3.Bucket</code> | The S3 bucket to use for source files. |
 
 ---
 
-##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.analyticsReporting"></a>
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.analyticsReporting"></a>
 
 ```typescript
 public readonly analyticsReporting: boolean;
@@ -3855,7 +3855,7 @@ Include runtime versioning information in this Stack.
 
 ---
 
-##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.crossRegionReferences"></a>
+##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.crossRegionReferences"></a>
 
 ```typescript
 public readonly crossRegionReferences: boolean;
@@ -3873,7 +3873,7 @@ This feature is currently experimental
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -3886,7 +3886,7 @@ A description of the stack.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -3960,7 +3960,7 @@ new MyStack(app, 'Stack1');
 ```
 
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: PermissionsBoundary;
@@ -3973,7 +3973,7 @@ Options for applying a permissions boundary to all IAM Roles and Users created w
 
 ---
 
-##### `stackName`<sup>Optional</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stackName"></a>
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -3986,7 +3986,7 @@ Name to deploy the stack with.
 
 ---
 
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.suppressTemplateIndentation"></a>
+##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.suppressTemplateIndentation"></a>
 
 ```typescript
 public readonly suppressTemplateIndentation: boolean;
@@ -4003,7 +4003,7 @@ default value `false` will be used.
 
 ---
 
-##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.synthesizer"></a>
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -4026,7 +4026,7 @@ other synthesizer is specified.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -4039,7 +4039,7 @@ Stack tags that will be applied to all the taggable resources and the stack itse
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -4052,7 +4052,7 @@ Whether to enable termination protection for this stack.
 
 ---
 
-##### `batchEcsJobDefinition`<sup>Required</sup> <a name="batchEcsJobDefinition" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.batchEcsJobDefinition"></a>
+##### `batchEcsJobDefinition`<sup>Required</sup> <a name="batchEcsJobDefinition" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.batchEcsJobDefinition"></a>
 
 ```typescript
 public readonly batchEcsJobDefinition: EcsJobDefinition;
@@ -4064,19 +4064,19 @@ The BatchEcsJobDefinition to use.
 
 ---
 
-##### `batchFargateConstruct`<sup>Required</sup> <a name="batchFargateConstruct" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.batchFargateConstruct"></a>
+##### `batchFargateConstruct`<sup>Required</sup> <a name="batchFargateConstruct" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.batchFargateConstruct"></a>
 
 ```typescript
 public readonly batchFargateConstruct: BatchFargateConstruct;
 ```
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct">BatchFargateConstruct</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstruct">BatchFargateConstruct</a>
 
 The BatchFargateConstruct to use.
 
 ---
 
-##### `constructJobDefinitionFunction`<sup>Required</sup> <a name="constructJobDefinitionFunction" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.constructJobDefinitionFunction"></a>
+##### `constructJobDefinitionFunction`<sup>Required</sup> <a name="constructJobDefinitionFunction" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.constructJobDefinitionFunction"></a>
 
 ```typescript
 public readonly constructJobDefinitionFunction: Function;
@@ -4088,19 +4088,19 @@ The Lambda function to use for constructing the job definition.
 
 ---
 
-##### `stepConfig`<sup>Required</sup> <a name="stepConfig" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stepConfig"></a>
+##### `stepConfig`<sup>Required</sup> <a name="stepConfig" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stepConfig"></a>
 
 ```typescript
 public readonly stepConfig: StepConfig;
 ```
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig">StepConfig</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig">StepConfig</a>
 
 The StepConfig to use for the Step Function Chain step.
 
 ---
 
-##### `bucket`<sup>Optional</sup> <a name="bucket" id="@cdklabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.bucket"></a>
+##### `bucket`<sup>Optional</sup> <a name="bucket" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.bucket"></a>
 
 ```typescript
 public readonly bucket: Bucket;
@@ -4112,14 +4112,14 @@ The S3 bucket to use for source files.
 
 ---
 
-### LambdaInvokeSfnChainConstructProps <a name="LambdaInvokeSfnChainConstructProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps"></a>
+### LambdaInvokeSfnChainConstructProps <a name="LambdaInvokeSfnChainConstructProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps"></a>
 
 Properties for the LambdaInvokeSfnChainConstruct.
 
-#### Initializer <a name="Initializer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.Initializer"></a>
 
 ```typescript
-import { LambdaInvokeSfnChainConstructProps } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { LambdaInvokeSfnChainConstructProps } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 const lambdaInvokeSfnChainConstructProps: LambdaInvokeSfnChainConstructProps = { ... }
 ```
@@ -4128,24 +4128,24 @@ const lambdaInvokeSfnChainConstructProps: LambdaInvokeSfnChainConstructProps = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.lambdaFunctionProps">lambdaFunctionProps</a></code> | <code>aws-cdk-lib.aws_lambda.FunctionProps</code> | The Lambda Function Props to generate. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantReadBuckets">grantReadBuckets</a></code> | <code>aws-cdk-lib.aws_s3.Bucket[]</code> | The S3 buckets to grant read permissions to. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantReadWriteBuckets">grantReadWriteBuckets</a></code> | <code>aws-cdk-lib.aws_s3.Bucket[]</code> | The S3 buckets to grant read/write permissions to. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantWriteBuckets">grantWriteBuckets</a></code> | <code>aws-cdk-lib.aws_s3.Bucket[]</code> | The S3 buckets to grant write permissions to. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.lambdaFunctionProps">lambdaFunctionProps</a></code> | <code>aws-cdk-lib.aws_lambda.FunctionProps</code> | The Lambda Function Props to generate. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantReadBuckets">grantReadBuckets</a></code> | <code>aws-cdk-lib.aws_s3.Bucket[]</code> | The S3 buckets to grant read permissions to. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantReadWriteBuckets">grantReadWriteBuckets</a></code> | <code>aws-cdk-lib.aws_s3.Bucket[]</code> | The S3 buckets to grant read/write permissions to. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantWriteBuckets">grantWriteBuckets</a></code> | <code>aws-cdk-lib.aws_s3.Bucket[]</code> | The S3 buckets to grant write permissions to. |
 
 ---
 
-##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.analyticsReporting"></a>
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.analyticsReporting"></a>
 
 ```typescript
 public readonly analyticsReporting: boolean;
@@ -4158,7 +4158,7 @@ Include runtime versioning information in this Stack.
 
 ---
 
-##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.crossRegionReferences"></a>
+##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.crossRegionReferences"></a>
 
 ```typescript
 public readonly crossRegionReferences: boolean;
@@ -4176,7 +4176,7 @@ This feature is currently experimental
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -4189,7 +4189,7 @@ A description of the stack.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -4263,7 +4263,7 @@ new MyStack(app, 'Stack1');
 ```
 
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: PermissionsBoundary;
@@ -4276,7 +4276,7 @@ Options for applying a permissions boundary to all IAM Roles and Users created w
 
 ---
 
-##### `stackName`<sup>Optional</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.stackName"></a>
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -4289,7 +4289,7 @@ Name to deploy the stack with.
 
 ---
 
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.suppressTemplateIndentation"></a>
+##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.suppressTemplateIndentation"></a>
 
 ```typescript
 public readonly suppressTemplateIndentation: boolean;
@@ -4306,7 +4306,7 @@ default value `false` will be used.
 
 ---
 
-##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.synthesizer"></a>
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -4329,7 +4329,7 @@ other synthesizer is specified.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -4342,7 +4342,7 @@ Stack tags that will be applied to all the taggable resources and the stack itse
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -4355,7 +4355,7 @@ Whether to enable termination protection for this stack.
 
 ---
 
-##### `lambdaFunctionProps`<sup>Required</sup> <a name="lambdaFunctionProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.lambdaFunctionProps"></a>
+##### `lambdaFunctionProps`<sup>Required</sup> <a name="lambdaFunctionProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.lambdaFunctionProps"></a>
 
 ```typescript
 public readonly lambdaFunctionProps: FunctionProps;
@@ -4367,7 +4367,7 @@ The Lambda Function Props to generate.
 
 ---
 
-##### `grantReadBuckets`<sup>Optional</sup> <a name="grantReadBuckets" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantReadBuckets"></a>
+##### `grantReadBuckets`<sup>Optional</sup> <a name="grantReadBuckets" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantReadBuckets"></a>
 
 ```typescript
 public readonly grantReadBuckets: Bucket[];
@@ -4380,7 +4380,7 @@ The S3 buckets to grant read permissions to.
 
 ---
 
-##### `grantReadWriteBuckets`<sup>Optional</sup> <a name="grantReadWriteBuckets" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantReadWriteBuckets"></a>
+##### `grantReadWriteBuckets`<sup>Optional</sup> <a name="grantReadWriteBuckets" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantReadWriteBuckets"></a>
 
 ```typescript
 public readonly grantReadWriteBuckets: Bucket[];
@@ -4393,7 +4393,7 @@ The S3 buckets to grant read/write permissions to.
 
 ---
 
-##### `grantWriteBuckets`<sup>Optional</sup> <a name="grantWriteBuckets" id="@cdklabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantWriteBuckets"></a>
+##### `grantWriteBuckets`<sup>Optional</sup> <a name="grantWriteBuckets" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.grantWriteBuckets"></a>
 
 ```typescript
 public readonly grantWriteBuckets: Bucket[];
@@ -4406,14 +4406,14 @@ The S3 buckets to grant write permissions to.
 
 ---
 
-### StateMachineWithLogGroupFromChainConstructProps <a name="StateMachineWithLogGroupFromChainConstructProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps"></a>
+### StateMachineWithLogGroupFromChainConstructProps <a name="StateMachineWithLogGroupFromChainConstructProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps"></a>
 
 Props for the StateMachineWithLogGroupFromChainConstruct construct.
 
-#### Initializer <a name="Initializer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.Initializer"></a>
 
 ```typescript
-import { StateMachineWithLogGroupFromChainConstructProps } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { StateMachineWithLogGroupFromChainConstructProps } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 const stateMachineWithLogGroupFromChainConstructProps: StateMachineWithLogGroupFromChainConstructProps = { ... }
 ```
@@ -4422,23 +4422,23 @@ const stateMachineWithLogGroupFromChainConstructProps: StateMachineWithLogGroupF
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.chain">chain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | Chain used to create the State Machine definition body. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stateMachineName">stateMachineName</a></code> | <code>string</code> | State Machine name that will be appended by '-StateMachine'. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | Maximum run time for this state machine. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.chain">chain</a></code> | <code>aws-cdk-lib.aws_stepfunctions.Chain</code> | Chain used to create the State Machine definition body. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stateMachineName">stateMachineName</a></code> | <code>string</code> | State Machine name that will be appended by '-StateMachine'. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | Maximum run time for this state machine. |
 
 ---
 
-##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.analyticsReporting"></a>
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.analyticsReporting"></a>
 
 ```typescript
 public readonly analyticsReporting: boolean;
@@ -4451,7 +4451,7 @@ Include runtime versioning information in this Stack.
 
 ---
 
-##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.crossRegionReferences"></a>
+##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.crossRegionReferences"></a>
 
 ```typescript
 public readonly crossRegionReferences: boolean;
@@ -4469,7 +4469,7 @@ This feature is currently experimental
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -4482,7 +4482,7 @@ A description of the stack.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -4556,7 +4556,7 @@ new MyStack(app, 'Stack1');
 ```
 
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: PermissionsBoundary;
@@ -4569,7 +4569,7 @@ Options for applying a permissions boundary to all IAM Roles and Users created w
 
 ---
 
-##### `stackName`<sup>Optional</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stackName"></a>
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -4582,7 +4582,7 @@ Name to deploy the stack with.
 
 ---
 
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.suppressTemplateIndentation"></a>
+##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.suppressTemplateIndentation"></a>
 
 ```typescript
 public readonly suppressTemplateIndentation: boolean;
@@ -4599,7 +4599,7 @@ default value `false` will be used.
 
 ---
 
-##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.synthesizer"></a>
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -4622,7 +4622,7 @@ other synthesizer is specified.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -4635,7 +4635,7 @@ Stack tags that will be applied to all the taggable resources and the stack itse
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -4648,7 +4648,7 @@ Whether to enable termination protection for this stack.
 
 ---
 
-##### `chain`<sup>Required</sup> <a name="chain" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.chain"></a>
+##### `chain`<sup>Required</sup> <a name="chain" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.chain"></a>
 
 ```typescript
 public readonly chain: Chain;
@@ -4660,7 +4660,7 @@ Chain used to create the State Machine definition body.
 
 ---
 
-##### `stateMachineName`<sup>Required</sup> <a name="stateMachineName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stateMachineName"></a>
+##### `stateMachineName`<sup>Required</sup> <a name="stateMachineName" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stateMachineName"></a>
 
 ```typescript
 public readonly stateMachineName: string;
@@ -4672,7 +4672,7 @@ State Machine name that will be appended by '-StateMachine'.
 
 ---
 
-##### `timeout`<sup>Optional</sup> <a name="timeout" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.timeout"></a>
+##### `timeout`<sup>Optional</sup> <a name="timeout" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.timeout"></a>
 
 ```typescript
 public readonly timeout: Duration;
@@ -4685,14 +4685,14 @@ Maximum run time for this state machine.
 
 ---
 
-### VpcBatchFargateConstructProps <a name="VpcBatchFargateConstructProps" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps"></a>
+### VpcBatchFargateConstructProps <a name="VpcBatchFargateConstructProps" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps"></a>
 
 Props for the VpcBatchFargateConstruct construct.
 
-#### Initializer <a name="Initializer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.Initializer"></a>
 
 ```typescript
-import { VpcBatchFargateConstructProps } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { VpcBatchFargateConstructProps } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 const vpcBatchFargateConstructProps: VpcBatchFargateConstructProps = { ... }
 ```
@@ -4701,26 +4701,26 @@ const vpcBatchFargateConstructProps: VpcBatchFargateConstructProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.cidrRange">cidrRange</a></code> | <code>string</code> | The CIDR range for the VPC. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.gatewayVpcEndpointServices">gatewayVpcEndpointServices</a></code> | <code>aws-cdk-lib.aws_ec2.GatewayVpcEndpointAwsService[]</code> | The Gateway VPC Endpoints for the VPC. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.interfaceVpcEndpointServices">interfaceVpcEndpointServices</a></code> | <code>aws-cdk-lib.aws_ec2.InterfaceVpcEndpointAwsService[]</code> | The Interface VPC Endpoints for the VPC. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.pipelineSubnetConfig">pipelineSubnetConfig</a></code> | <code>aws-cdk-lib.aws_ec2.SubnetConfiguration</code> | The subnet configuration for the VPC. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.securityGroup">securityGroup</a></code> | <code>aws-cdk-lib.aws_ec2.SecurityGroup</code> | The security group for the VPC. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.vpcLogGroup">vpcLogGroup</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | The VPC Log Group. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.cidrRange">cidrRange</a></code> | <code>string</code> | The CIDR range for the VPC. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.gatewayVpcEndpointServices">gatewayVpcEndpointServices</a></code> | <code>aws-cdk-lib.aws_ec2.GatewayVpcEndpointAwsService[]</code> | The Gateway VPC Endpoints for the VPC. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.interfaceVpcEndpointServices">interfaceVpcEndpointServices</a></code> | <code>aws-cdk-lib.aws_ec2.InterfaceVpcEndpointAwsService[]</code> | The Interface VPC Endpoints for the VPC. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.pipelineSubnetConfig">pipelineSubnetConfig</a></code> | <code>aws-cdk-lib.aws_ec2.SubnetConfiguration</code> | The subnet configuration for the VPC. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.securityGroup">securityGroup</a></code> | <code>aws-cdk-lib.aws_ec2.SecurityGroup</code> | The security group for the VPC. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.vpcLogGroup">vpcLogGroup</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | The VPC Log Group. |
 
 ---
 
-##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.analyticsReporting"></a>
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.analyticsReporting"></a>
 
 ```typescript
 public readonly analyticsReporting: boolean;
@@ -4733,7 +4733,7 @@ Include runtime versioning information in this Stack.
 
 ---
 
-##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.crossRegionReferences"></a>
+##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.crossRegionReferences"></a>
 
 ```typescript
 public readonly crossRegionReferences: boolean;
@@ -4751,7 +4751,7 @@ This feature is currently experimental
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -4764,7 +4764,7 @@ A description of the stack.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -4838,7 +4838,7 @@ new MyStack(app, 'Stack1');
 ```
 
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: PermissionsBoundary;
@@ -4851,7 +4851,7 @@ Options for applying a permissions boundary to all IAM Roles and Users created w
 
 ---
 
-##### `stackName`<sup>Optional</sup> <a name="stackName" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.stackName"></a>
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -4864,7 +4864,7 @@ Name to deploy the stack with.
 
 ---
 
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.suppressTemplateIndentation"></a>
+##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.suppressTemplateIndentation"></a>
 
 ```typescript
 public readonly suppressTemplateIndentation: boolean;
@@ -4881,7 +4881,7 @@ default value `false` will be used.
 
 ---
 
-##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.synthesizer"></a>
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -4904,7 +4904,7 @@ other synthesizer is specified.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -4917,7 +4917,7 @@ Stack tags that will be applied to all the taggable resources and the stack itse
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -4930,7 +4930,7 @@ Whether to enable termination protection for this stack.
 
 ---
 
-##### `cidrRange`<sup>Optional</sup> <a name="cidrRange" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.cidrRange"></a>
+##### `cidrRange`<sup>Optional</sup> <a name="cidrRange" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.cidrRange"></a>
 
 ```typescript
 public readonly cidrRange: string;
@@ -4942,7 +4942,7 @@ The CIDR range for the VPC.
 
 ---
 
-##### `gatewayVpcEndpointServices`<sup>Optional</sup> <a name="gatewayVpcEndpointServices" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.gatewayVpcEndpointServices"></a>
+##### `gatewayVpcEndpointServices`<sup>Optional</sup> <a name="gatewayVpcEndpointServices" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.gatewayVpcEndpointServices"></a>
 
 ```typescript
 public readonly gatewayVpcEndpointServices: GatewayVpcEndpointAwsService[];
@@ -4954,7 +4954,7 @@ The Gateway VPC Endpoints for the VPC.
 
 ---
 
-##### `interfaceVpcEndpointServices`<sup>Optional</sup> <a name="interfaceVpcEndpointServices" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.interfaceVpcEndpointServices"></a>
+##### `interfaceVpcEndpointServices`<sup>Optional</sup> <a name="interfaceVpcEndpointServices" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.interfaceVpcEndpointServices"></a>
 
 ```typescript
 public readonly interfaceVpcEndpointServices: InterfaceVpcEndpointAwsService[];
@@ -4966,7 +4966,7 @@ The Interface VPC Endpoints for the VPC.
 
 ---
 
-##### `pipelineSubnetConfig`<sup>Optional</sup> <a name="pipelineSubnetConfig" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.pipelineSubnetConfig"></a>
+##### `pipelineSubnetConfig`<sup>Optional</sup> <a name="pipelineSubnetConfig" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.pipelineSubnetConfig"></a>
 
 ```typescript
 public readonly pipelineSubnetConfig: SubnetConfiguration;
@@ -4978,7 +4978,7 @@ The subnet configuration for the VPC.
 
 ---
 
-##### `securityGroup`<sup>Optional</sup> <a name="securityGroup" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.securityGroup"></a>
+##### `securityGroup`<sup>Optional</sup> <a name="securityGroup" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.securityGroup"></a>
 
 ```typescript
 public readonly securityGroup: SecurityGroup;
@@ -4990,7 +4990,7 @@ The security group for the VPC.
 
 ---
 
-##### `vpcLogGroup`<sup>Optional</sup> <a name="vpcLogGroup" id="@cdklabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.vpcLogGroup"></a>
+##### `vpcLogGroup`<sup>Optional</sup> <a name="vpcLogGroup" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.vpcLogGroup"></a>
 
 ```typescript
 public readonly vpcLogGroup: LogGroup;
@@ -5004,32 +5004,32 @@ The VPC Log Group.
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### StepConfig <a name="StepConfig" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig"></a>
+### StepConfig <a name="StepConfig" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig"></a>
 
-#### Initializers <a name="Initializers" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer"></a>
+#### Initializers <a name="Initializers" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer"></a>
 
 ```typescript
-import { StepConfig } from '@cdklabs/data-transformation-pipeline-cdk-constructs'
+import { StepConfig } from '@awslabs/data-transformation-pipeline-cdk-constructs'
 
 new StepConfig(type: StepType, schema: JobSchema)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer.parameter.type">type</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepType">StepType</a></code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer.parameter.schema">schema</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema">JobSchema</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer.parameter.type">type</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepType">StepType</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer.parameter.schema">schema</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema">JobSchema</a></code> | *No description.* |
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer.parameter.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer.parameter.type"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepType">StepType</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepType">StepType</a>
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer.parameter.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.Initializer.parameter.schema"></a>
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema">JobSchema</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema">JobSchema</a>
 
 ---
 
@@ -5039,28 +5039,28 @@ new StepConfig(type: StepType, schema: JobSchema)
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.property.schema">schema</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema">JobSchema</a></code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.property.type">type</a></code> | <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepType">StepType</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.property.schema">schema</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema">JobSchema</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.property.type">type</a></code> | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepType">StepType</a></code> | *No description.* |
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.property.schema"></a>
 
 ```typescript
 public readonly schema: JobSchema;
 ```
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema">JobSchema</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema">JobSchema</a>
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepConfig.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepConfig.property.type"></a>
 
 ```typescript
 public readonly type: StepType;
 ```
 
-- *Type:* <a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepType">StepType</a>
+- *Type:* <a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepType">StepType</a>
 
 ---
 
@@ -5068,18 +5068,18 @@ public readonly type: StepType;
 
 ## Enums <a name="Enums" id="Enums"></a>
 
-### JobSchema <a name="JobSchema" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema"></a>
+### JobSchema <a name="JobSchema" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema"></a>
 
 #### Members <a name="Members" id="Members"></a>
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema.INPUT_OUTPUT_PREFIX">INPUT_OUTPUT_PREFIX</a></code> | Input and output come from S3 prefixes. |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema.INPUT_SINGLE_FILE_OUTPUT_PREFIX">INPUT_SINGLE_FILE_OUTPUT_PREFIX</a></code> | Input is from a single file and output is from an S3 prefix. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema.INPUT_OUTPUT_PREFIX">INPUT_OUTPUT_PREFIX</a></code> | Input and output come from S3 prefixes. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema.INPUT_SINGLE_FILE_OUTPUT_PREFIX">INPUT_SINGLE_FILE_OUTPUT_PREFIX</a></code> | Input is from a single file and output is from an S3 prefix. |
 
 ---
 
-##### `INPUT_OUTPUT_PREFIX` <a name="INPUT_OUTPUT_PREFIX" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema.INPUT_OUTPUT_PREFIX"></a>
+##### `INPUT_OUTPUT_PREFIX` <a name="INPUT_OUTPUT_PREFIX" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema.INPUT_OUTPUT_PREFIX"></a>
 
 Input and output come from S3 prefixes.
 
@@ -5089,7 +5089,7 @@ Output: S3 prefix
 ---
 
 
-##### `INPUT_SINGLE_FILE_OUTPUT_PREFIX` <a name="INPUT_SINGLE_FILE_OUTPUT_PREFIX" id="@cdklabs/data-transformation-pipeline-cdk-constructs.JobSchema.INPUT_SINGLE_FILE_OUTPUT_PREFIX"></a>
+##### `INPUT_SINGLE_FILE_OUTPUT_PREFIX` <a name="INPUT_SINGLE_FILE_OUTPUT_PREFIX" id="@awslabs/data-transformation-pipeline-cdk-constructs.JobSchema.INPUT_SINGLE_FILE_OUTPUT_PREFIX"></a>
 
 Input is from a single file and output is from an S3 prefix.
 
@@ -5099,23 +5099,23 @@ Output: S3 prefix
 ---
 
 
-### StepType <a name="StepType" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepType"></a>
+### StepType <a name="StepType" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepType"></a>
 
 #### Members <a name="Members" id="Members"></a>
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepType.JOIN">JOIN</a></code> | *No description.* |
-| <code><a href="#@cdklabs/data-transformation-pipeline-cdk-constructs.StepType.BOUNDINGBOX">BOUNDINGBOX</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepType.JOIN">JOIN</a></code> | *No description.* |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StepType.BOUNDINGBOX">BOUNDINGBOX</a></code> | *No description.* |
 
 ---
 
-##### `JOIN` <a name="JOIN" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepType.JOIN"></a>
+##### `JOIN` <a name="JOIN" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepType.JOIN"></a>
 
 ---
 
 
-##### `BOUNDINGBOX` <a name="BOUNDINGBOX" id="@cdklabs/data-transformation-pipeline-cdk-constructs.StepType.BOUNDINGBOX"></a>
+##### `BOUNDINGBOX` <a name="BOUNDINGBOX" id="@awslabs/data-transformation-pipeline-cdk-constructs.StepType.BOUNDINGBOX"></a>
 
 ---
 
