@@ -33,32 +33,36 @@ This project is built using the [AWS Cloud Development Kit (CDK)](https://aws.am
     ```shell
     $ git clone <this>
     ```
+2. From the project root, install the dependencies.
+    ```shell
+    $ npx projen install
+    ```
 
-2. Enter the code sample backend directory.
+3. Enter the code sample backend directory.
     ```shell
     $ cd cdk-sample
     ```
 
-3. Install packages
+4. Install packages
    ```shell
    $ npm install
    ```
 
-4. Boostrap AWS CDK resources on the AWS account.
+5. Boostrap AWS CDK resources on the AWS account.
     ```shell
     $ cdk bootstrap aws://ACCOUNT_ID/REGION
     ```
 
-5. Set environment variables.
+6. Set environment variables.
     ```shell
     $ export CDK_DEFAULT_ACCOUNT=<ACCOUNT_ID>
     $ export CDK_DEFAULT_REGION=<REGION>
     ```
-6. Inside `bin/cdk-sample.ts` on line 20, set `deployStack` variable equal to the stack you want to deploy, either  `DeployStack.BlenderBoundingBoxMeshesStack` or `DeployStack.BlenderJoinMeshesStack`.
+7. Inside `bin/cdk-sample.ts` on line 20, set `deployStack` variable equal to the stack you want to deploy, either  `DeployStack.BlenderBoundingBoxMeshesStack` or `DeployStack.BlenderJoinMeshesStack`.
 
     `DeployStack.BlenderBoundingBoxMeshesStack` is a [Blender Bounding Box Parallel Pipeline](../src/use-cases/blender/blender-boundingbox-meshes-parallel/README.md) while `DeployStack.BlenderJoinMeshesStack` is a [Blender Join Meshes Series Pipeline](../src/use-cases/blender/blender-join-meshes-series/README.md).
 
-7. Deploy the sample in your account. 
+8. Deploy the sample in your account. Note: Docker daemon must be running.
     ```shell
     $ cdk deploy
     ```
