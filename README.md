@@ -87,8 +87,7 @@ The following constructs are available in the library:
 
 # Contributors
 
-[![contributors](https://contrib.rocks/image?repo=awslabs/data-transformation-pipeline-cdk-constructs&max=2000)](https://github.com/awslabs/data-transformation-pipeline-cdk-constructs/graphs/contributors)
-
+[![contributors](https://contrib.rocks/image?repo=awslabs/data-transformation-pipeline-cdk-constructs)](https://github.com/awslabs/data-transformation-pipeline-cdk-constructs/graphs/contributors)
 
 # License
 
