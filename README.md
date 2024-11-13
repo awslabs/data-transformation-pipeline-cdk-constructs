@@ -49,6 +49,8 @@ If you want to add a new construct to the library, check out our [design guideli
 - Clone this project locally
   - Run `git clone https://github.com/awslabs/data-transformation-pipeline-cdk-constructs.git`
 - Navigate to the project directory
+- Install all project dependencies
+  - Run `npx projen install`
 - Create a directory within the cloned project to host your CDK project
   - *Note:* There is a `cdk-sample` directory in the project with an [example CDK project](./cdk-sample/README.md)
 - Create or use an existing CDK application in TypeScript.
