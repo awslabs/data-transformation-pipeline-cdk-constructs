@@ -30,12 +30,12 @@
     "organization": true
   },
   "devDependencies": {
-    "@aws-cdk/aws-lambda-python-alpha": "2.152.0-alpha.0",
+    "@aws-cdk/aws-lambda-python-alpha": "2.177.0-alpha.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^7",
     "@typescript-eslint/parser": "^7",
-    "aws-cdk-lib": "2.152.0",
+    "aws-cdk-lib": "2.177.0",
     "constructs": "10.3.0",
     "eslint": "^8",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -53,8 +53,8 @@
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-lambda-python-alpha": "2.152.0-alpha.0",
-    "aws-cdk-lib": "^2.152.0",
+    "@aws-cdk/aws-lambda-python-alpha": "2.177.0-alpha.0",
+    "aws-cdk-lib": "^2.177.0",
     "constructs": "^10.3.0"
   },
   "dependencies": {
