@@ -14,7 +14,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   constructsVersion: '10.3.0',
   defaultReleaseBranch: 'main',
   description: 'AWS Data Transformation Pipeline Construct Library',
-  jsiiVersion: '~5.4.0',
+  jsiiVersion: '~5.4.50',
   name: '@' + PUBLICATION_NAMESPACE + '/' + PROJECT_NAME,
   projenrcTs: true,
   projenVersion: '~0.84.5',
