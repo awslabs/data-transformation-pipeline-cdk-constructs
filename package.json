@@ -31,26 +31,26 @@
   },
   "devDependencies": {
     "@aws-cdk/aws-lambda-python-alpha": "2.177.0-alpha.0",
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^29.5.14",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^7",
     "@typescript-eslint/parser": "^7",
     "aws-cdk-lib": "2.177.0",
     "constructs": "10.3.0",
     "eslint": "^8",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
     "jest": "^29.7.0",
     "jest-junit": "^15",
     "jsii": "~5.4.50",
-    "jsii-diff": "^1.94.0",
-    "jsii-docgen": "^10.3.19",
-    "jsii-pacmak": "^1.94.0",
+    "jsii-diff": "^1.106.0",
+    "jsii-docgen": "^10.6.5",
+    "jsii-pacmak": "^1.106.0",
     "jsii-rosetta": "~5.4.50",
     "projen": "~0.84.5",
-    "ts-jest": "^29.1.2",
+    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "@aws-cdk/aws-lambda-python-alpha": "2.177.0-alpha.0",
@@ -58,7 +58,7 @@
     "constructs": "^10.3.0"
   },
   "dependencies": {
-    "cdk-nag": "^2.28.195"
+    "cdk-nag": "^2.35.3"
   },
   "keywords": [
     "cdk"
