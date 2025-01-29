@@ -651,14 +651,7 @@
     chalk "^4.1.2"
     semver "^7.6.3"
 
-"@jsii/spec@^1.102.0":
-  version "1.102.0"
-  resolved "https://registry.npmjs.org/@jsii/spec/-/spec-1.102.0.tgz"
-  integrity sha512-/VcmoEyp7HR0xoFz47/fiyZjAv+0gHG4ZwTbgB+umbB88bTbLZadnqBL7T9OIKQbK4w8HNOaRnHwjNBIYIPxWQ==
-  dependencies:
-    ajv "^8.17.1"
-
-"@jsii/spec@^1.106.0":
+"@jsii/spec@^1.102.0", "@jsii/spec@^1.106.0":
   version "1.106.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.106.0.tgz#f40010ec8cde14b7a003dd5b6a46480d9d7e222f"
   integrity sha512-pAIvqEGf0YLmtzFtUKWNEGkCmXMHENy7k+rzCD147wnM4jHhvEL1mEvxi99aA2VcmvLYaAYNOs/XozT+s+kLqQ==
@@ -3082,26 +3075,7 @@ jsii-rosetta@~5.4.50:
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii@~5.4.0:
-  version "5.4.32"
-  resolved "https://registry.npmjs.org/jsii/-/jsii-5.4.32.tgz"
-  integrity sha512-bHFQ/5Vx6EGAeJvmuqmdWWWTqMdJRTLaK7iaARs+AzRVyYXu2hJxIe/jCE7Nosz1XdS+sqAbxwGMusd2X1itbA==
-  dependencies:
-    "@jsii/check-node" "1.102.0"
-    "@jsii/spec" "^1.102.0"
-    case "^1.6.3"
-    chalk "^4"
-    downlevel-dts "^0.11.0"
-    fast-deep-equal "^3.1.3"
-    log4js "^6.9.1"
-    semver "^7.6.3"
-    semver-intersect "^1.5.0"
-    sort-json "^2.0.1"
-    spdx-license-list "^6.9.0"
-    typescript "~5.4"
-    yargs "^17.7.2"
-
-jsii@~5.4.50:
+jsii@~5.4.0, jsii@~5.4.50:
   version "5.4.50"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.4.50.tgz#8ff2826eae732813dd6e0148fc2d565d693c82b3"
   integrity sha512-VEpOjtFykmlEa8+IwxXRZiA1KQueywyiYF8OI/HzCxXR4Asxwd084d4+N1pgDm1eQKQNK5mpj/KjL+VEXsyu8g==
