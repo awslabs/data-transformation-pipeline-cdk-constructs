@@ -190,7 +190,7 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
 
     const constructJobDefinitionFunction = new lambda.Function(this, 'ConstructJobDefinitionFunction',
       {
-        runtime: lambda.Runtime.PYTHON_3_12,
+        runtime: lambda.Runtime.PYTHON_3_13,
         code: lambda.Code.fromAsset(path.join(__dirname, '../../../constructs/core/lambda/constructJobDefinition')),
         handler: 'index.lambda_handler',
         timeout: Duration.seconds(60),

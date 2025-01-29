@@ -40,12 +40,12 @@ export class JobSchemasLambdaLayersConstruct extends Construct {
 
     this.inputOutputPrefix = new pylambda.PythonLayerVersion(this, 'InputOutputPrefixSchemaLayer', {
       entry: path.join(__dirname, './input-output-prefix'),
-      compatibleRuntimes: [lambda.Runtime.PYTHON_3_12],
+      compatibleRuntimes: [lambda.Runtime.PYTHON_3_13],
     });
 
     this.inputSingleFileOutputPrefix = new pylambda.PythonLayerVersion(this, 'InputSingleFileOutputPrefixSchemaLayer', {
       entry: path.join(__dirname, './input-single-file-output-prefix'),
-      compatibleRuntimes: [lambda.Runtime.PYTHON_3_12],
+      compatibleRuntimes: [lambda.Runtime.PYTHON_3_13],
     });
   }
 }

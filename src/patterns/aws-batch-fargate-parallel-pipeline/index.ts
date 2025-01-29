@@ -84,7 +84,7 @@ export class BatchFargateParallelPipelineConstruct extends Construct {
         functionName: `${props.pipelineName}-MapStateInputGenerator`,
         code: lambda.Code.fromAsset(path.join(__dirname, '..', '..', 'constructs', 'core', 'lambda', 'sfnMapStateInputGenerator')),
         handler: 'index.lambda_handler',
-        runtime: lambda.Runtime.PYTHON_3_12,
+        runtime: lambda.Runtime.PYTHON_3_13,
       },
       grantReadBuckets: [props.batchFargateSubmitJobSfnChainConstructProps.bucket!],
     });
