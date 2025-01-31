@@ -22,10 +22,12 @@ The [input-output-prefix job schema](../../../constructs/core/job-schemas-lambda
 ## Usage
 1. Deploy the stack in a CDK project. 
 2. Once deployed, navigate to the AWS Console S3 page. Find the source asset bucket.
-3. Create a folder `input`
+3. Create a folder named `input` at the root of the source asset S3 bucket.
 4. Upload 2 or many .OBJ files with mesh content to the `input` folder.
-5. Navigate to the Step Functions page. 
-6. Execute the Step Function with the following input state:
+5. Create another folder named `step-1` at the root of the source asset S3 bucket.
+6. Note: See `cdk-sample/sample-input/sample-join` directory for sample .OBJ files and sample directory structure required.
+7. Navigate to the Step Functions page. 
+8. Execute the Step Function with the following input state:
 ```
 {
   "state_machine_global_data": {
