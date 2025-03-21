@@ -649,7 +649,7 @@ new BlenderBoundingBoxMeshesStack(scope: Construct, id: string, props?: StackPro
 | --- | --- |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.toString">toString</a></code> | Returns a string representation of this construct. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
-| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata">addMetadata</a></code> | Adds an arbitary key-value pair, with information you want to record about the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addMetadata">addMetadata</a></code> | Adds an arbitrary key-value pair, with information you want to record about the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderBoundingBoxMeshesStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
@@ -702,7 +702,7 @@ app, and also supports nested stacks.
 public addMetadata(key: string, value: any): void
 ```
 
-Adds an arbitary key-value pair, with information you want to record about the stack.
+Adds an arbitrary key-value pair, with information you want to record about the stack.
 
 These get translated to the Metadata section of the generated template.
 
@@ -1536,7 +1536,7 @@ new BlenderJoinMeshesStack(scope: Construct, id: string, props?: StackProps)
 | --- | --- |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.toString">toString</a></code> | Returns a string representation of this construct. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
-| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata">addMetadata</a></code> | Adds an arbitary key-value pair, with information you want to record about the stack. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addMetadata">addMetadata</a></code> | Adds an arbitrary key-value pair, with information you want to record about the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BlenderJoinMeshesStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
@@ -1589,7 +1589,7 @@ app, and also supports nested stacks.
 public addMetadata(key: string, value: any): void
 ```
 
-Adds an arbitary key-value pair, with information you want to record about the stack.
+Adds an arbitrary key-value pair, with information you want to record about the stack.
 
 These get translated to the Metadata section of the generated template.
 
@@ -2967,6 +2967,7 @@ const batchFargateConstructProps: BatchFargateConstructProps = { ... }
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | SNS Topic ARNs that will receive stack events. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
@@ -3096,6 +3097,19 @@ new YourStack(myStage, 'Stack2');
 new MyStack(app, 'Stack1');
 ```
 
+
+##### `notificationArns`<sup>Optional</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.notificationArns"></a>
+
+```typescript
+public readonly notificationArns: string[];
+```
+
+- *Type:* string[]
+- *Default:* no notfication arns.
+
+SNS Topic ARNs that will receive stack events.
+
+---
 
 ##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateConstructProps.property.permissionsBoundary"></a>
 
@@ -3245,6 +3259,7 @@ const batchFargateParallelPipelineConstructProps: BatchFargateParallelPipelineCo
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | SNS Topic ARNs that will receive stack events. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
@@ -3375,6 +3390,19 @@ new YourStack(myStage, 'Stack2');
 new MyStack(app, 'Stack1');
 ```
 
+
+##### `notificationArns`<sup>Optional</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.notificationArns"></a>
+
+```typescript
+public readonly notificationArns: string[];
+```
+
+- *Type:* string[]
+- *Default:* no notfication arns.
+
+SNS Topic ARNs that will receive stack events.
+
+---
 
 ##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateParallelPipelineConstructProps.property.permissionsBoundary"></a>
 
@@ -3537,6 +3565,7 @@ const batchFargateSeriesPipelineConstructProps: BatchFargateSeriesPipelineConstr
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | SNS Topic ARNs that will receive stack events. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
@@ -3667,6 +3696,19 @@ new YourStack(myStage, 'Stack2');
 new MyStack(app, 'Stack1');
 ```
 
+
+##### `notificationArns`<sup>Optional</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.notificationArns"></a>
+
+```typescript
+public readonly notificationArns: string[];
+```
+
+- *Type:* string[]
+- *Default:* no notfication arns.
+
+SNS Topic ARNs that will receive stack events.
+
+---
 
 ##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSeriesPipelineConstructProps.property.permissionsBoundary"></a>
 
@@ -3828,6 +3870,7 @@ const batchFargateSubmitJobSfnChainConstructProps: BatchFargateSubmitJobSfnChain
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | SNS Topic ARNs that will receive stack events. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
@@ -3959,6 +4002,19 @@ new YourStack(myStage, 'Stack2');
 new MyStack(app, 'Stack1');
 ```
 
+
+##### `notificationArns`<sup>Optional</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.notificationArns"></a>
+
+```typescript
+public readonly notificationArns: string[];
+```
+
+- *Type:* string[]
+- *Default:* no notfication arns.
+
+SNS Topic ARNs that will receive stack events.
+
+---
 
 ##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.BatchFargateSubmitJobSfnChainConstructProps.property.permissionsBoundary"></a>
 
@@ -4132,6 +4188,7 @@ const lambdaInvokeSfnChainConstructProps: LambdaInvokeSfnChainConstructProps = {
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | SNS Topic ARNs that will receive stack events. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
@@ -4262,6 +4319,19 @@ new YourStack(myStage, 'Stack2');
 new MyStack(app, 'Stack1');
 ```
 
+
+##### `notificationArns`<sup>Optional</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.notificationArns"></a>
+
+```typescript
+public readonly notificationArns: string[];
+```
+
+- *Type:* string[]
+- *Default:* no notfication arns.
+
+SNS Topic ARNs that will receive stack events.
+
+---
 
 ##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.LambdaInvokeSfnChainConstructProps.property.permissionsBoundary"></a>
 
@@ -4426,6 +4496,7 @@ const stateMachineWithLogGroupFromChainConstructProps: StateMachineWithLogGroupF
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | SNS Topic ARNs that will receive stack events. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
@@ -4555,6 +4626,19 @@ new YourStack(myStage, 'Stack2');
 new MyStack(app, 'Stack1');
 ```
 
+
+##### `notificationArns`<sup>Optional</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.notificationArns"></a>
+
+```typescript
+public readonly notificationArns: string[];
+```
+
+- *Type:* string[]
+- *Default:* no notfication arns.
+
+SNS Topic ARNs that will receive stack events.
+
+---
 
 ##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.StateMachineWithLogGroupFromChainConstructProps.property.permissionsBoundary"></a>
 
@@ -4705,6 +4789,7 @@ const vpcBatchFargateConstructProps: VpcBatchFargateConstructProps = { ... }
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | SNS Topic ARNs that will receive stack events. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
 | <code><a href="#@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
@@ -4837,6 +4922,19 @@ new YourStack(myStage, 'Stack2');
 new MyStack(app, 'Stack1');
 ```
 
+
+##### `notificationArns`<sup>Optional</sup> <a name="notificationArns" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.notificationArns"></a>
+
+```typescript
+public readonly notificationArns: string[];
+```
+
+- *Type:* string[]
+- *Default:* no notfication arns.
+
+SNS Topic ARNs that will receive stack events.
+
+---
 
 ##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@awslabs/data-transformation-pipeline-cdk-constructs.VpcBatchFargateConstructProps.property.permissionsBoundary"></a>
 
