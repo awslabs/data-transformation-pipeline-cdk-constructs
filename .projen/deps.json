@@ -86,12 +86,12 @@
     },
     {
       "name": "@aws-cdk/aws-lambda-python-alpha",
-      "version": "2.178.2-alpha.0",
+      "version": "2.184.0-alpha.0",
       "type": "peer"
     },
     {
       "name": "aws-cdk-lib",
-      "version": "^2.178.2",
+      "version": "^2.184.0",
       "type": "peer"
     },
     {
