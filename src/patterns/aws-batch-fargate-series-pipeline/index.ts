@@ -18,8 +18,7 @@ import { NagSuppressions } from 'cdk-nag';
 import { Construct } from 'constructs';
 import { BatchFargateSubmitJobSfnChainConstruct, BatchFargateSubmitJobSfnChainConstructProps } from '../../constructs/aws-batch-fargate-submit-job-sfn-chain';
 import { StateMachineWithLogGroupFromChainConstruct } from '../../constructs/aws-state-machine-with-log-group-from-chain';
-import { JobSchema } from '../../constructs/core/job-schemas-lambda-layers';
-import { StepType } from '../../constructs/core/job-utils';
+import { StepType, JobTypes } from '../../constructs/core/job-utils';
 
 /**
  * Properties for the BatchFargateSeriesPipelineConstruct
@@ -100,7 +99,7 @@ export class BatchFargateSeriesPipelineConstruct extends Construct {
       submitJobStates.push(jobState.sfnChain);
 
       if (stepNumber < props.steps.length) {
-        passStates.push(generatePassState(this, step.stepConfig.type, step.stepConfig.schema, stepNumber, step.bucket?.bucketName));
+        passStates.push(generatePassState(this, step.stepConfig.type, step.stepConfig.getJobTypeName(), stepNumber, step.bucket?.bucketName));
       }
     });
 
@@ -123,24 +122,17 @@ export class BatchFargateSeriesPipelineConstruct extends Construct {
       this.stateMachineLogGroup = stateMachineWithLogGroup.stateMachineLogGroup;
     }
 
-    function generatePassState(scope: Construct, stepType: StepType, stepSchema: JobSchema, stepNumber: number, inputBucket?: string): sfn.Pass {
-
-      switch (stepSchema) {
-        case JobSchema.INPUT_OUTPUT_PREFIX:
-        default:
-          return new sfn.Pass(scope, `PassState_${stepNumber}_To_${stepNumber + 1}`, {
-            result: sfn.Result.fromObject({
-              type: stepType.toString(),
-              step_schema: stepSchema.toString(),
-              source_bucket: inputBucket,
-              inputs_prefix: `step-${stepNumber}`,
-              outputs_prefix: stepNumber === props.steps.length - 1 ? 'final-output' : `step-${stepNumber + 1}`,
-            }),
-            resultPath: '$.step_data',
-          });
-      }
+    function generatePassState(scope: Construct, stepType: string, jobTypeName: string, stepNumber: number, inputBucket?: string): sfn.Pass {
+      return new sfn.Pass(scope, `PassState_${stepNumber}_To_${stepNumber + 1}`, {
+        result: sfn.Result.fromObject({
+          type: stepType.toString(),
+          step_schema: jobTypeName,
+          source_bucket: inputBucket,
+          inputs_prefix: `step-${stepNumber}`,
+          outputs_prefix: stepNumber === props.steps.length - 1 ? 'final-output' : `step-${stepNumber + 1}`,
+        }),
+        resultPath: '$.step_data',
+      });
     }
-
   }
-
 }

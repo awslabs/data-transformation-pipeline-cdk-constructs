@@ -25,8 +25,7 @@ import { Construct } from 'constructs';
 import { BatchFargateConstruct } from '../../../constructs/aws-batch-fargate';
 import { BatchFargateSubmitJobSfnChainConstructProps } from '../../../constructs/aws-batch-fargate-submit-job-sfn-chain';
 import { VpcBatchFargateConstruct } from '../../../constructs/aws-vpc-batch-fargate';
-import { JobSchemasLambdaLayersConstruct, JobSchema } from '../../../constructs/core/job-schemas-lambda-layers';
-import { StepConfig, StepType } from '../../../constructs/core/job-utils';
+import { StepConfig, JobTypes } from '../../../constructs/core/job-utils';
 import { BatchFargateSeriesPipelineConstruct } from '../../../patterns/aws-batch-fargate-series-pipeline';
 
 
@@ -69,8 +68,6 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
         ec2.InterfaceVpcEndpointAwsService.STEP_FUNCTIONS,
       ],
     });
-
-    const jobSchemaLambdaLayers = new JobSchemasLambdaLayersConstruct(this, 'JobSchemaLambdaLayers');
 
     /**
      * Batch Resources
@@ -197,7 +194,6 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
         code: lambda.Code.fromAsset(path.join(__dirname, '../../../constructs/core/lambda/constructJobDefinition')),
         handler: 'index.lambda_handler',
         timeout: Duration.seconds(60),
-        layers: [jobSchemaLambdaLayers.inputOutputPrefix],
       });
     sourceAssetBucket.grantRead(constructJobDefinitionFunction);
 
@@ -218,7 +214,7 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
 
     const step: BatchFargateSubmitJobSfnChainConstructProps =
     {
-      stepConfig: new StepConfig(StepType.JOIN, JobSchema.INPUT_OUTPUT_PREFIX),
+      stepConfig: new StepConfig('JOIN', JobTypes.INPUT_OUTPUT_PREFIX),
       bucket: sourceAssetBucket,
       batchFargateConstruct: batchFargateConstruct,
       batchEcsJobDefinition: batchEcsJobDefinition,

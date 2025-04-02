@@ -10,5 +10,15 @@
  *  OR CONDITIONS OF ANY KIND, express or implied. See the License for the specific language governing permissions
  *  and limitations under the License.
  */
-export * from './job-utils';
-export * from './job-schema-system';
+
+// Export core functionality
+export * from './core/schema-registry';
+export * from './core/validators';
+export * from './core/middleware';
+export * from './core/types';
+
+// Export schema implementations
+export * from './schemas';
+
+// Export lambda layer
+export * from './lambda-layer';

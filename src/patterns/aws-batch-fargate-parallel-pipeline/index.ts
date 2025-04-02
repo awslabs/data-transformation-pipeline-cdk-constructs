@@ -111,7 +111,7 @@ export class BatchFargateParallelPipelineConstruct extends Construct {
         'state_machine_global_data.$': '$.state_machine_global_data',
         'step_data': {
           'type': props.batchFargateSubmitJobSfnChainConstructProps.stepConfig.type,
-          'step_schema': props.batchFargateSubmitJobSfnChainConstructProps.stepConfig.schema,
+          'step_schema': props.batchFargateSubmitJobSfnChainConstructProps.stepConfig.getJobTypeName(),
           'source_bucket.$': '$.step_data.Payload.source_bucket',
           'input_file_name.$': '$$.Map.Item.Value',
           'inputs_prefix.$': '$.step_data.Payload.inputs_prefix',

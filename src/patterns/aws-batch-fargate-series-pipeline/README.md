@@ -57,7 +57,7 @@ where:
 * `step_data` is passed to the next state, but may not persist through the entire pipeline.
 * `job_name` is the name of the current job
 * `type` is the type identifier for the job. This is a string value and is entirely dependent on container business logic interpretation, e.g. "JOIN".
-* `step_schema` is the I/O schema for the step, e.g. `input-output-prefix`. See [job schemas](../../constructs/core/job-schemas-lambda-layers/index.ts).
+* `step_schema` is the I/O schema for the step, e.g. `INPUT_OUTPUT_PREFIX`. See job schemas in the job-schema-system.
 * `source_bucket` is the bucket name of the source objects to be processed, e.g. "my-bucket-name".
 * `inputs_prefix` is the S3 prefix pointing to the folder location of the input source objects, e.g. "my-project/my-job/source".
 * `outputs_prefix` is the S3 prefix pointing to the folder location where the computed output objects should be stored, e.g. "my-project/my-job/output".

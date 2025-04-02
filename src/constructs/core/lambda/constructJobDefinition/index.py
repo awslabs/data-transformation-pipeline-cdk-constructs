@@ -55,9 +55,22 @@ def lambda_handler(event, context):
     if "step_data" not in event and "step_schema" not in event["step_data"]:
         raise Exception("Invalid input.")
     
-    # import job layer based on step_schema
+    # import job module based on step_schema
     schema_module = event["step_data"]["step_schema"]
-    schema = __import__(schema_module)
+    
+    # Map schema names to module paths
+    schema_module_map = {
+        "INPUT_OUTPUT_PREFIX": "input_output_prefix",
+        "INPUT_SINGLE_FILE_OUTPUT_PREFIX": "input_single_file_output_prefix"
+    }
+    
+    # Get the module path from the map
+    module_path = schema_module_map.get(schema_module)
+    if not module_path:
+        raise Exception(f"Unknown schema module: {schema_module}")
+    
+    # Import the module
+    schema = __import__(f"job_schema_system.python_modules.{module_path}", fromlist=["construct_definition"])
     
     definition = schema.construct_definition(event)
 

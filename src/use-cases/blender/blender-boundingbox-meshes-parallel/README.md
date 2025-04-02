@@ -17,7 +17,7 @@ Parallel Pipeline State Machine Graph:
 ![image](../../../../docs/img/parallel-pipeline-state-machine.png)
 
 ## Job Schema
-The [input-single-file-output-prefix job schema](../../../constructs/core/job-schemas-lambda-layers/README.md) is used for this use case.
+The `INPUT_SINGLE_FILE_OUTPUT_PREFIX` job schema from the job-schema-system is used for this use case.
 
 ## Usage
 1. Deploy the stack in a CDK project. 

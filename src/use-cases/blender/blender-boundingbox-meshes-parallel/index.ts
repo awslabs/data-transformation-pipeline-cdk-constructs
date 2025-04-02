@@ -24,8 +24,7 @@ import { NagSuppressions } from 'cdk-nag';
 import { Construct } from 'constructs';
 import { BatchFargateConstruct } from '../../../constructs/aws-batch-fargate';
 import { VpcBatchFargateConstruct } from '../../../constructs/aws-vpc-batch-fargate';
-import { JobSchemasLambdaLayersConstruct, JobSchema } from '../../../constructs/core/job-schemas-lambda-layers';
-import { StepConfig, StepType } from '../../../constructs/core/job-utils';
+import { StepConfig, JobTypes } from '../../../constructs/core/job-utils';
 import { BatchFargateParallelPipelineConstruct } from '../../../patterns/aws-batch-fargate-parallel-pipeline';
 
 export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
@@ -68,7 +67,7 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
       ],
     });
 
-    const jobSchemaLambdaLayers = new JobSchemasLambdaLayersConstruct(this, 'JobSchemaLambdaLayers');
+    // No longer need JobSchemaLambdaLayers
 
     /**
      * Batch Resources
@@ -194,7 +193,6 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
         code: lambda.Code.fromAsset(path.join(__dirname, '../../../constructs/core/lambda/constructJobDefinition')),
         handler: 'index.lambda_handler',
         timeout: Duration.seconds(60),
-        layers: [jobSchemaLambdaLayers.inputSingleFileOutputPrefix],
       });
     sourceAssetBucket.grantRead(constructJobDefinitionFunction);
 
@@ -217,7 +215,7 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
       ...props,
       pipelineName: 'BlenderBoundingBoxMeshes',
       batchFargateSubmitJobSfnChainConstructProps: {
-        stepConfig: new StepConfig(StepType.BOUNDINGBOX, JobSchema.INPUT_SINGLE_FILE_OUTPUT_PREFIX),
+        stepConfig: new StepConfig('BOUNDINGBOX', JobTypes.INPUT_SINGLE_FILE_OUTPUT_PREFIX),
         bucket: sourceAssetBucket,
         constructJobDefinitionFunction: constructJobDefinitionFunction,
         batchEcsJobDefinition: batchEcsJobDefinition,
