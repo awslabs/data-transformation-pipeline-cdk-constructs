@@ -18,7 +18,7 @@ def lambda_handler(event, context):
     Construct Job Definition
     Builds job input definition to run the Batch application
     
-    Input event (example with "input-output-prefix" schema):
+    Input event (example with "INPUT_OUTPUT_PREFIX" schema):
     {
         "state_machine_global_data": { # Data that persists through the state machine
             "job_name": string, # Name of job

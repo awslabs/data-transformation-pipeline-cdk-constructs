@@ -25,6 +25,7 @@ import { Construct } from 'constructs';
 import { BatchFargateConstruct } from '../../../constructs/aws-batch-fargate';
 import { VpcBatchFargateConstruct } from '../../../constructs/aws-vpc-batch-fargate';
 import { StepConfig, JobTypes } from '../../../constructs/core/job-utils';
+import { JobSchemaSystemLambdaLayerConstruct } from '../../../constructs/core/job-schema-system';
 import { BatchFargateParallelPipelineConstruct } from '../../../patterns/aws-batch-fargate-parallel-pipeline';
 
 export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
@@ -67,7 +68,8 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
       ],
     });
 
-    // No longer need JobSchemaLambdaLayers
+    // Create the job schema system lambda layer
+    const jobSchemaSystemLambdaLayer = new JobSchemaSystemLambdaLayerConstruct(this, 'JobSchemaSystemLambdaLayer');
 
     /**
      * Batch Resources
@@ -193,6 +195,7 @@ export class BlenderBoundingBoxMeshesStack extends cdk.Stack {
         code: lambda.Code.fromAsset(path.join(__dirname, '../../../constructs/core/lambda/constructJobDefinition')),
         handler: 'index.lambda_handler',
         timeout: Duration.seconds(60),
+        layers: [jobSchemaSystemLambdaLayer.schemaLayer]
       });
     sourceAssetBucket.grantRead(constructJobDefinitionFunction);
 

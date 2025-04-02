@@ -26,6 +26,7 @@ import { BatchFargateConstruct } from '../../../constructs/aws-batch-fargate';
 import { BatchFargateSubmitJobSfnChainConstructProps } from '../../../constructs/aws-batch-fargate-submit-job-sfn-chain';
 import { VpcBatchFargateConstruct } from '../../../constructs/aws-vpc-batch-fargate';
 import { StepConfig, JobTypes } from '../../../constructs/core/job-utils';
+import { JobSchemaSystemLambdaLayerConstruct } from '../../../constructs/core/job-schema-system';
 import { BatchFargateSeriesPipelineConstruct } from '../../../patterns/aws-batch-fargate-series-pipeline';
 
 
@@ -188,12 +189,16 @@ export class BlenderJoinMeshesStack extends cdk.Stack {
       securityGroups: pipelineNetwork.securityGroups,
     });
 
+    // Create the job schema system lambda layer
+    const jobSchemaSystemLambdaLayer = new JobSchemaSystemLambdaLayerConstruct(this, 'JobSchemaSystemLambdaLayer');
+
     const constructJobDefinitionFunction = new lambda.Function(this, 'ConstructJobDefinitionFunction',
       {
         runtime: lambda.Runtime.PYTHON_3_13,
         code: lambda.Code.fromAsset(path.join(__dirname, '../../../constructs/core/lambda/constructJobDefinition')),
         handler: 'index.lambda_handler',
         timeout: Duration.seconds(60),
+        layers: [jobSchemaSystemLambdaLayer.schemaLayer]
       });
     sourceAssetBucket.grantRead(constructJobDefinitionFunction);
 
