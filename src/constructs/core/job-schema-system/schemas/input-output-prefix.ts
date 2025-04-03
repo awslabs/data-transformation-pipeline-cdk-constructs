@@ -75,7 +75,7 @@ const inputOutputPrefixSchema: JobSchemaDefinition = {
 export const inputOutputPrefixJobType: JobTypeDefinition = {
   name: 'INPUT_OUTPUT_PREFIX',
   schema: inputOutputPrefixSchema,
-  validator: (event) => {
+  validator: (_event) => {
     // Additional custom validation logic can be added here
     return true;
   }

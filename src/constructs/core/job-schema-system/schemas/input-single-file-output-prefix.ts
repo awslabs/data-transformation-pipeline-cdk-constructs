@@ -72,7 +72,7 @@ const inputSingleFileOutputPrefixSchema: JobSchemaDefinition = {
 export const inputSingleFileOutputPrefixJobType: JobTypeDefinition = {
   name: 'INPUT_SINGLE_FILE_OUTPUT_PREFIX',
   schema: inputSingleFileOutputPrefixSchema,
-  validator: (event) => {
+  validator: (_event) => {
     // Additional custom validation logic can be added here
     return true;
   }

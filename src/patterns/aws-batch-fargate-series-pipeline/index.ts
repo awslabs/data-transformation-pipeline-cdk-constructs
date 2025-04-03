@@ -18,7 +18,6 @@ import { NagSuppressions } from 'cdk-nag';
 import { Construct } from 'constructs';
 import { BatchFargateSubmitJobSfnChainConstruct, BatchFargateSubmitJobSfnChainConstructProps } from '../../constructs/aws-batch-fargate-submit-job-sfn-chain';
 import { StateMachineWithLogGroupFromChainConstruct } from '../../constructs/aws-state-machine-with-log-group-from-chain';
-import { StepType, JobTypes } from '../../constructs/core/job-utils';
 
 /**
  * Properties for the BatchFargateSeriesPipelineConstruct
