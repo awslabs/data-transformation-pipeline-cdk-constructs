@@ -35,7 +35,7 @@ The `INPUT_OUTPUT_PREFIX` job schema from the job-schema-system is used for this
   },
   "step_data": {
     "type": "JOIN",
-    "step_schema": "input-output-prefix",
+    "step_schema": "input_output_prefix",
     "source_bucket": <Source_Asset_Bucket_Name>,
     "inputs_prefix": "input",
     "outputs_prefix": "step-1"
