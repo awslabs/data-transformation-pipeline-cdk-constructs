@@ -70,22 +70,3 @@ export interface ValidationResult {
   valid: boolean;
   errors?: string[];
 }
-
-/**
- * Legacy job schema enum for backward compatibility
- */
-export enum LegacyJobSchema {
-  /**
-   * Input and output come from S3 prefixes.
-   * Input: S3 prefix
-   * Output: S3 prefix
-   */
-  INPUT_OUTPUT_PREFIX = 'input-output-prefix',
-
-  /**
-   * Input is from a single file and output is from an S3 prefix.
-   * Input: S3 prefix, object key
-   * Output: S3 prefix
-   */
-  INPUT_SINGLE_FILE_OUTPUT_PREFIX = 'input-single-file-output-prefix'
-}

@@ -11,7 +11,7 @@
  *  and limitations under the License.
  */
 
-import { JobTypeDefinition, LegacyJobSchema } from './types';
+import { JobTypeDefinition } from './types';
 
 /**
  * Registry for job types and their associated schemas
@@ -72,23 +72,6 @@ export class JobTypeRegistry {
   public getAllJobTypes(): JobTypeDefinition[] {
     return Array.from(this.jobTypes.values());
   }
-  
-  /**
-   * Convert a legacy job schema to a job type name
-   * @param schema The legacy job schema
-   * @returns The corresponding job type name
-   */
-  public static legacySchemaToJobType(schema: LegacyJobSchema): string {
-    switch (schema) {
-      case LegacyJobSchema.INPUT_OUTPUT_PREFIX:
-        return 'INPUT_OUTPUT_PREFIX';
-      case LegacyJobSchema.INPUT_SINGLE_FILE_OUTPUT_PREFIX:
-        return 'INPUT_SINGLE_FILE_OUTPUT_PREFIX';
-      default:
-        throw new Error(`Unknown legacy schema: ${schema}`);
-    }
-  }
 }
-
 // Export a singleton instance
 export const jobTypeRegistry = JobTypeRegistry.getInstance();

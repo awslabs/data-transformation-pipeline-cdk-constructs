@@ -111,11 +111,3 @@ export const JobTypes = {
   INPUT_OUTPUT_PREFIX: 'INPUT_OUTPUT_PREFIX',
   INPUT_SINGLE_FILE_OUTPUT_PREFIX: 'INPUT_SINGLE_FILE_OUTPUT_PREFIX',
 };
-
-/**
- * Legacy StepType enum for backward compatibility
- */
-export enum StepType {
-  JOIN = 'JOIN',
-  BOUNDINGBOX = 'BOUNDINGBOX'
-}
