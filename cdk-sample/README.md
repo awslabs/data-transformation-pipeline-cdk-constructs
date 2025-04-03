@@ -2,134 +2,196 @@
 
 ## Overview
 
-This is a sample CDK project that shows how to deploy either a [Blender Bounding Box Parallel Pipeline](../src/use-cases/blender/blender-boundingbox-meshes-parallel/README.md) or a [Blender Join Meshes Series Pipeline](../src/use-cases/blender/blender-join-meshes-series/README.md)
+This sample CDK project demonstrates how to deploy AWS data transformation pipelines using the constructs and patterns provided in this library. You can deploy one of two sample pipelines:
 
+1. **[Blender Bounding Box Parallel Pipeline](../src/use-cases/blender/blender-boundingbox-meshes-parallel/README.md)** - Processes multiple 3D mesh files in parallel, calculating a bounding box for each mesh.
+2. **[Blender Join Meshes Series Pipeline](../src/use-cases/blender/blender-join-meshes-series/README.md)** - Joins multiple 3D mesh files together in a series of sequential steps.
 
-## Getting started
+Both pipelines use AWS Batch with Fargate to process 3D mesh files using Blender, demonstrating how to build scalable data transformation workflows.
 
-To deploy this CDK Sample, follow these steps to set up the required tools and configure your AWS environment:
+## Getting Started
+
+Follow these steps to set up the required tools and deploy one of the sample pipelines to your AWS environment:
 
 ### Prerequisites
 
-- An AWS account. We recommend you deploy this solution in a new account.
-- [AWS CLI](https://aws.amazon.com/cli/): configure your credentials
+- An AWS account (we recommend using a new account for testing)
+- [AWS CLI](https://aws.amazon.com/cli/) installed and configured
+- Node.js v18.20.4 or later
+- [AWS CDK](https://github.com/aws/aws-cdk/releases/tag/v2.152.0) v2.152.0 or later
+- Docker installed and running (required for container image building)
 
-```
+### Configure AWS CLI
+
+```bash
 aws configure --profile [your-profile] 
 AWS Access Key ID [None]: xxxxxx
-AWS Secret Access Key [None]:yyyyyyyyyy
+AWS Secret Access Key [None]: yyyyyyyyyy
 Default region name [None]: us-east-1 
 Default output format [None]: json
 ```
 
-- Node.js: v18.20.4
-- [AWS CDK](https://github.com/aws/aws-cdk/releases/tag/v2.152.0): 2.152.0
+### Deploy the Pipeline
 
-### Deploy the Backend with CDK
-
-This project is built using the [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/). See [Getting Started With the AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html) for additional details and prerequisites.
-
-1. Clone this repository.
-    ```shell
-    $ git clone <this>
-    ```
-2. From the project root, install the dependencies.
-    ```shell
-    $ npx projen install
-    ```
-
-3. Enter the code sample backend directory.
-    ```shell
-    $ cd cdk-sample
-    ```
-
-4. Install packages
-   ```shell
-   $ npm install
+1. Clone this repository
+   ```bash
+   git clone <repository-url>
    ```
 
-5. Boostrap AWS CDK resources on the AWS account.
-    ```shell
-    $ cdk bootstrap aws://ACCOUNT_ID/REGION
-    ```
+2. Install dependencies from the project root
+   ```bash
+   npx projen install
+   ```
 
-6. Set environment variables.
-    ```shell
-    $ export CDK_DEFAULT_ACCOUNT=<ACCOUNT_ID>
-    $ export CDK_DEFAULT_REGION=<REGION>
-    ```
-7. Inside `bin/cdk-sample.ts` on line 20, set `deployStack` variable equal to the stack you want to deploy, either  `DeployStack.BlenderBoundingBoxMeshesStack` or `DeployStack.BlenderJoinMeshesStack`.
+3. Navigate to the CDK sample directory
+   ```bash
+   cd cdk-sample
+   ```
 
-    `DeployStack.BlenderBoundingBoxMeshesStack` is a [Blender Bounding Box Parallel Pipeline](../src/use-cases/blender/blender-boundingbox-meshes-parallel/README.md) while `DeployStack.BlenderJoinMeshesStack` is a [Blender Join Meshes Series Pipeline](../src/use-cases/blender/blender-join-meshes-series/README.md).
+4. Install packages
+   ```bash
+   npm install
+   ```
 
-8. Deploy the sample in your account. Note: Docker daemon must be running.
-    ```shell
-    $ cdk deploy
-    ```
+5. Bootstrap AWS CDK resources in your account
+   ```bash
+   cdk bootstrap aws://ACCOUNT_ID/REGION
+   ```
 
-### Usage
+6. Set environment variables
+   ```bash
+   export CDK_DEFAULT_ACCOUNT=<ACCOUNT_ID>
+   export CDK_DEFAULT_REGION=<REGION>
+   ```
 
-1. Once deployed, log in to the AWS Console and navigate to the S3 page.
+7. Choose which pipeline to deploy by editing `bin/cdk-sample.ts`:
+   
+   Open the file and locate this line (around line 20):
+   ```typescript
+   var deployStack = DeployStack.BlenderBoundingBoxMeshesStack;
+   ```
+   
+   Set it to one of:
+   - `DeployStack.BlenderBoundingBoxMeshesStack` - For the parallel pipeline
+   - `DeployStack.BlenderJoinMeshesStack` - For the series pipeline
 
-2. Find the `blender(join|boundingbox)meshesstack-sourceassetbucketXXXX` and navigate to its management page.
+8. Deploy the stack (ensure Docker is running)
+   ```bash
+   cdk deploy
+   ```
 
-3. Select `Create folder` and create a folder named `input`. If you are deploying the Blender Join pipeline, create a second folder named `step-1` at the root level of the bucket.
+## Using the Deployed Pipeline
 
-5. 
-    For Blender Bounding Box pipeline:
-    * Upload the sample OBJ files from this repository inside `sample-input/sample-boundingbox/input` named `partial-mesh-01.obj`, `partial-mesh-02.obj`, and `partial-mesh-03.obj` to the new `input` folder in S3.
+### Setting Up Input Data
 
-    For Blender Join pipeline:
-    * Upload the sample OBJ files from this repository inside `sample-input/sample-join/input` named `partial-mesh-01.obj` and `partial-mesh-02.obj` to the new `input` folder in S3.
-    * Upload the sample OBJ files from this repository inside `sample-input/sample-join/step-1` named `partial-mesh-03.obj` to the new `step-1` folder in S3.
+1. After deployment, log in to the AWS Console and navigate to S3
+2. Find the source bucket created by the stack:
+   - For Bounding Box pipeline: `blenderboundingboxmeshesstack-sourceassetbucketXXXX`
+   - For Join Meshes pipeline: `blenderjoinmeshesstack-sourceassetbucketXXXX`
 
-7. Navigate to the Step Functions page inside the AWS Console.
+3. Create the required folders:
+   - For **both** pipelines: Create a folder named `input`
+   - For **Join Meshes** pipeline only: Also create a folder named `step-1`
 
-8. Navigate to the `Blender(Join|Boundingbox)MeshesPipelineStateMachineWithLogGroup...` state machine management page.
+4. Upload the sample files:
+   
+   **For Bounding Box Pipeline:**
+   - Upload the sample OBJ files from `cdk-sample/sample-input/sample-boundingbox/input/` to the `input` folder in S3
+     - `partial-mesh-01.obj`
+     - `partial-mesh-02.obj`
+     - `partial-mesh-03.obj`
+   
+   **For Join Meshes Pipeline:**
+   - Upload the sample OBJ files from `cdk-sample/sample-input/sample-join/input/` to the `input` folder in S3
+     - `partial-mesh-01.obj`
+     - `partial-mesh-02.obj`
+   - Upload the sample OBJ file from `cdk-sample/sample-input/sample-join/step-1/` to the `step-1` folder in S3
+     - `partial-mesh-03.obj`
 
-9. Select `Start execution`.
+### Running the Pipeline
 
-10. Input the following JSON input depending on the pipeline type, and ensure to include the source asset bucket name:
+1. Navigate to AWS Step Functions in the AWS Console
+2. Find and select the state machine:
+   - For Bounding Box: `BlenderBoundingBoxMeshesPipelineStateMachineWithLogGroup...`
+   - For Join Meshes: `BlenderJoinMeshesPipelineStateMachineWithLogGroup...`
+3. Click "Start execution"
+4. Enter the appropriate JSON input:
 
-    for Blender Bounding Box Pipeline:
-    ```
-    {
-        "state_machine_global_data": {
-            "job_name": "test-map"
-        },
-        "step_data": {
-            "type": "BOUNDINGBOX",
-            "source_bucket": <source_asset_bucket_name>,
-            "inputs_prefix": "input",
-            "outputs_prefix": "bounding-box"
-        }
-    }
-    ```
+   **For Bounding Box Pipeline:**
+   ```json
+   {
+     "state_machine_global_data": {
+       "job_name": "test-map"
+     },
+     "step_data": {
+       "type": "BOUNDINGBOX",
+       "source_bucket": "<source_asset_bucket_name>",
+       "inputs_prefix": "input",
+       "outputs_prefix": "bounding-box"
+     }
+   }
+   ```
 
-    for Blender Join Meshes Pipeline:
-    ```
-    {
-        "state_machine_global_data": {
-            "job_name": "test-series"
-        },
-        "step_data": {
-            "type": "JOIN",
-            "step_schema": "input-output-prefix",
-            "source_bucket": <source_asset_bucket_name>,
-            "inputs_prefix": "input",
-            "outputs_prefix": "step-1"
-        }
-    }
-    ```
+   **For Join Meshes Pipeline:**
+   ```json
+   {
+     "state_machine_global_data": {
+       "job_name": "test-series"
+     },
+     "step_data": {
+       "type": "JOIN",
+       "step_schema": "input-output-prefix",
+       "source_bucket": "<source_asset_bucket_name>",
+       "inputs_prefix": "input",
+       "outputs_prefix": "step-1"
+     }
+   }
+   ```
 
-9. Select `Start Execution`.
+   > **Note:** Replace `<source_asset_bucket_name>` with the actual name of your S3 bucket created by the stack.
 
-10. When the execution is complete, navigate to the S3 bucket to view the output files.
+5. Click "Start Execution"
+6. Monitor the execution in the Step Functions console
+7. When complete, check the output in S3:
+   - For Bounding Box: Look in the `bounding-box` folder
+   - For Join Meshes: Look in the `final-output` folder
+
+## Pipeline Details
+
+### Bounding Box Parallel Pipeline
+
+This pipeline processes multiple 3D mesh files in parallel, calculating a bounding box for each mesh:
+
+![Bounding Box Pipeline](../docs/img/parallel-pipeline-state-machine.png)
+
+Input meshes:
+
+![Input Meshes](../docs/img/bounding-box-input.png)
+
+Output meshes with bounding boxes:
+
+![Output Meshes](../docs/img/bounding-box-output.png)
+
+### Join Meshes Series Pipeline
+
+This pipeline joins multiple 3D mesh files together in a series of sequential steps:
+
+![Series Pipeline](../docs/img/series-pipeline-state-machine.png)
+
+Step 1 - Join first two meshes:
+
+![Step 1](../docs/img/join-mesh-step-1.png)
+
+Step 2 - Join result with third mesh:
+
+![Step 2](../docs/img/join-mesh-step-2.png)
 
 ## Cleanup
 
-To limit the amount of expenditure in your account, destroy the stack when you are finished testing.
+To avoid ongoing charges, destroy the stack when you're finished:
 
-```shell
-$ cdk destroy
+```bash
+cdk destroy
 ```
+
+This will remove all resources created by the stack, including S3 buckets, Step Functions state machines, and AWS Batch resources.
