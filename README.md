@@ -33,7 +33,7 @@ The patterns defined in AWS Data Transformation Pipeline CDK Constructs are high
 
 # CDK Versions
 
-AWS Data Transformation Pipeline CDK Constructs and the AWS CDK are independent teams and have different release schedules. Each release of AWS Data Transformation Pipeline CDK Constructs is built against a specific version of the AWS CDK. The [CHANGELOG.md](./CHANGELOG.md) file lists the CDK version associated with each AWS Data Transformation Pipeline CDK Constructs release. For instance, AWS Data Transformation Pipeline CDK Constructs v0.0.0 was built against AWS CDK v2.184.0. This means that to use AWS Data Transformation Pipeline CDK Constructs v0.0.0, your application must include AWS CDK v2.184.0 or later. You can continue to use the latest AWS CDK versions and upgrade the your AWS Data Transformation Pipeline CDK Constructs version when new releases become available.
+AWS Data Transformation Pipeline CDK Constructs and the AWS CDK are independent teams and have different release schedules. Each release of AWS Data Transformation Pipeline CDK Constructs is built against a specific version of the AWS CDK. The [CHANGELOG.md](./CHANGELOG.md) file lists the CDK version associated with each AWS Data Transformation Pipeline CDK Constructs release. For instance, AWS Data Transformation Pipeline CDK Constructs v0.0.1 was built against AWS CDK v2.184.0. This means that to use AWS Data Transformation Pipeline CDK Constructs v0.0.1, your application must include AWS CDK v2.184.0 or later. You can continue to use the latest AWS CDK versions and upgrade the your AWS Data Transformation Pipeline CDK Constructs version when new releases become available.
 
 # Contributing
 
