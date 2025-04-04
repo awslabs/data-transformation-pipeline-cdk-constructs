@@ -18,7 +18,7 @@ Follow these steps to set up the required tools and deploy one of the sample pip
 - An AWS account (we recommend using a new account for testing)
 - [AWS CLI](https://aws.amazon.com/cli/) installed and configured
 - Node.js v18.20.4 or later
-- [AWS CDK](https://github.com/aws/aws-cdk/releases/tag/v2.152.0) v2.152.0 or later
+- [AWS CDK](https://github.com/aws/aws-cdk/releases/tag/v2.184.0) v2.184.0 or later
 - Docker installed and running (required for container image building)
 
 ### Configure AWS CLI
