@@ -140,7 +140,7 @@ Default output format [None]: json
      },
      "step_data": {
        "type": "JOIN",
-       "step_schema": "input_output_prefix",
+       "step_schema": "input-output-prefix",
        "source_bucket": "<source_asset_bucket_name>",
        "inputs_prefix": "input",
        "outputs_prefix": "step-1"
